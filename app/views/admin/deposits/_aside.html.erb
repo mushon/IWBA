@@ -1,0 +1,12 @@
+<ul class="nav nav-pills nav-stacked">
+  <li <%= 'class=active' if params[:controller] == 'admin/deposits' and params[:action] == 'edit' %>>
+    <%= link_to "Basic Information", edit_admin_deposit_path(@deposit) %>
+  </li>
+  <li <%= 'class=active' if params[:controller] == 'admin/features' %>>
+    <%= link_to "Options(#{@deposit.features.count})", admin_deposit_features_path(@deposit) %>
+  </li>
+
+  <li <%= 'class=active' if params[:controller] == 'admin/stock_infos' %>>
+    <%= link_to "Stock Condition", admin_deposit_stock_infos_path(@deposit) %>
+  </li>
+</ul>

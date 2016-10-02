@@ -1,0 +1,21 @@
+
+<%= form_for [:admin, @deposit], :html => {:class => 'form-horizontal'} do |f| %>
+  <div class="form-group">
+    <%= f.label :name, 'Name', :class => 'col-md-2 control-label' %>
+    <div class="col-md-5">
+      <%= f.text_field :name, :class => 'form-control', :placeholder => 'Name' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :amount_dollar, 'Amount', :class => 'col-md-2 control-label' %>
+    <div class="col-md-5">
+      <%= f.text_field :amount_dollar, :class => 'form-control', :placeholder => 'Amount' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+      <%= f.submit 'Save', :class => 'btn btn-primary' %>
+    </div>
+  </div>
+<% end %>

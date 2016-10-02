@@ -1,0 +1,36 @@
+# MySQL.  Versions 4.1 and 5.0 are recommended.
+# 
+# Install the MYSQL driver
+#   gem install mysql2
+#
+# Ensure the MySQL gem is defined in your Gemfile
+#   gem 'mysql2'
+#
+# And be sure to use new-style password hashing:
+#   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: water_deposit_development
+  pool: 5
+  username: wonyoungso
+  host: localhost
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: water_deposit_test
+  pool: 5
+  username: wonyoungso
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: water_deposit_production
+  pool: 5
+  username: <%= ENV['WONYOUNGSO_PGSQL_ID'] %>
+  password: <%= ENV['WONYOUNGSO_PGSQL_PASSWD'] %>

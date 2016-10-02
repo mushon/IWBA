@@ -1,0 +1,14 @@
+<ul class="nav nav-tabs" role="tablist">
+  <li <%= 'class=active' if params[:action] == 'index' and params[:controller] == 'admin/deposits' %>>
+    <%= link_to "All Deposits(#{Deposit.count})", admin_deposits_path %>
+  </li>
+  <% if @deposit.present? and not @deposit.new_record? %>
+  <li class="active">
+    <%= link_to "#{@deposit.name}", edit_admin_deposit_path(@deposit) %>
+  </li>
+  <% elsif @deposit.present? and @deposit.new_record? %>
+  <li class="active">
+    <%= link_to "New Deposit", "javascript:void(0);" %>
+  </li>
+  <% end %>
+</ul>

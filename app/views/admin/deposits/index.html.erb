@@ -1,0 +1,27 @@
+<%= render 'tab' %>
+<h3> 
+  All Deposits
+</h3>
+
+<table class="table table-striped">
+  <tr>
+    <th>
+      #
+    </th>
+    <th>
+      Name
+    </th>
+    <th>
+      Amount
+    </th>
+  </tr>
+  <% @deposits.each do |deposit| %>
+  <tr>
+    <td><%= deposit.id %></td>
+    <td><%= link_to deposit.name, edit_admin_deposit_path(deposit) %></td>
+    <td><%= number_to_pound(deposit.amount / 100) %></td>
+  </tr>
+  <% end %>
+</table>
+
+<%= link_to 'New Deposit', new_admin_deposit_path, :class => 'btn btn-default' %>
