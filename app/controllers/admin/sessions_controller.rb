@@ -10,7 +10,7 @@ class Admin::SessionsController < ApplicationController
         if @user.admin?
           session[:user_id] = @user.id
 
-          redirect_to admin_root_path, :notice => '성공적으로 로그인 되었습니다.'
+          redirect_to admin_root_path, :notice => 'Successfully logged in as an admin.'
         else  
           @valid_data = {
             type: "pw_error",
