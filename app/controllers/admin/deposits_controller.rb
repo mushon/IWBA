@@ -9,7 +9,7 @@ class Admin::DepositsController < Admin::AdminController
 
 
   def create
-    @deposit = Deposit.new(params.require(:deposit).permit(:name, :amount_dollar, :exclude_vat_amount_dollar))
+    @deposit = Deposit.new(params.require(:deposit).permit(:email))
    
     
     if @deposit.save
@@ -31,7 +31,7 @@ class Admin::DepositsController < Admin::AdminController
     @deposit = Deposit.find params[:id]
    
     
-    if @deposit.update_attributes(params.require(:deposit).permit(:name, :amount_dollar, :exclude_vat_amount_dollar))
+    if @deposit.update_attributes(params.require(:deposit).permit(:email))
       flash[:notice] = 'Successfully updated.'
       redirect_to request.referer
     else

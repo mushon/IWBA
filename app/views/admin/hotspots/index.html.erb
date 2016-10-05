@@ -1,0 +1,27 @@
+<%= render 'tab' %>
+<h3> 
+  All Hotspots
+</h3>
+
+<table class="table table-striped">
+  <tr>
+    <th>
+      #
+    </th>
+    <th>
+      Name
+    </th>
+    <th>
+      Position
+    </th>
+  </tr>
+  <% @hotspots.each do |hotspot| %>
+  <tr>
+    <td><%= hotspot.id %></td>
+    <td><%= hotspot.name %></td>
+    <td><%= "#{hotspot.lon}, #{hotspot.lat}" %></td>
+  </tr>
+  <% end %>
+</table>
+
+<%= link_to 'New Hotspot', new_admin_hotspot_path, :class => 'btn btn-default' %>

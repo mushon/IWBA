@@ -1,0 +1,14 @@
+<ul class="nav nav-tabs" role="tablist">
+  <li <%= 'class=active' if params[:action] == 'index' and params[:controller] == 'admin/hotspots' %>>
+    <%= link_to "All Hotspots(#{Hotspot.count})", admin_hotspots_path %>
+  </li>
+  <% if @hotspot.present? and not @hotspot.new_record? %>
+  <li class="active">
+    <%= link_to "#{@hotspot.name}", edit_admin_hotspot_path(@hotspot) %>
+  </li>
+  <% elsif @hotspot.present? and @hotspot.new_record? %>
+  <li class="active">
+    <%= link_to "New Hotspot", "javascript:void(0);" %>
+  </li>
+  <% end %>
+</ul>

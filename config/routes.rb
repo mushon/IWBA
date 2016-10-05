@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
+  namespace :api do 
+    resources :drops
+    resources :deposits
+  end
 
   namespace :admin do 
     resources :users 
     resources :deposits
-    resources :countries 
+    resources :hotspots
+    resources :drops
 
     match 'login' => 'sessions#new', :via => :get
     match 'login' => 'sessions#create', :via => :post
@@ -11,7 +16,5 @@ Rails.application.routes.draw do
 
     root :to => 'deposits#index'
   end
-
-
-
+  
 end

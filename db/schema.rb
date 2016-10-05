@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161002055958) do
+ActiveRecord::Schema.define(version: 20161005081553) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,12 +26,37 @@ ActiveRecord::Schema.define(version: 20161002055958) do
     t.float    "withdrawal_per_capita"
   end
 
+  create_table "deposit_hotspots", force: :cascade do |t|
+    t.integer  "deposit_id"
+    t.integer  "hotspot_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["deposit_id"], name: "index_deposit_hotspots_on_deposit_id", using: :btree
+    t.index ["hotspot_id"], name: "index_deposit_hotspots_on_hotspot_id", using: :btree
+  end
+
   create_table "deposits", force: :cascade do |t|
     t.float    "amount"
     t.integer  "country_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "email"
     t.index ["country_id"], name: "index_deposits_on_country_id", using: :btree
+  end
+
+  create_table "drops", force: :cascade do |t|
+    t.float    "amount"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "hotspots", force: :cascade do |t|
+    t.string   "name"
+    t.float    "lat"
+    t.float    "lon"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.float    "amount"
   end
 
   create_table "users", force: :cascade do |t|

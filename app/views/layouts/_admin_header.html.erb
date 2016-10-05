@@ -10,11 +10,14 @@
         <li <%= 'class=active' if params[:controller] == 'admin/deposits'  %>>
           <%= link_to "Deposits(#{Deposit.count})", admin_deposits_path %>
         </li>
-        <li <%= 'class=active' if params[:controller] == 'admin/countries'  %>>
-          <%= link_to "Countries(#{Country.count})", admin_countries_path %>
+        <li <%= 'class=active' if params[:controller] == 'admin/hotspots'  %>>
+          <%= link_to "Hotspots(#{Hotspot.count})", admin_hotspots_path %>
+        </li>
+        <li <%= 'class=active' if params[:controller] == 'admin/drops'  %>>
+          <%= link_to "Drops(#{Drop.count})", admin_drops_path %>
         </li>
         <li <%= 'class=active' if params[:controller] == 'admin/users'  %>>
-          <%= link_to "Users(#{User.count})", admin_users_path %>
+          <%= link_to "Admin(#{User.count})", admin_users_path %>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">

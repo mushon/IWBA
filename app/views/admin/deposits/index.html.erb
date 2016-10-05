@@ -9,17 +9,13 @@
       #
     </th>
     <th>
-      Name
-    </th>
-    <th>
-      Amount
+      Email
     </th>
   </tr>
   <% @deposits.each do |deposit| %>
   <tr>
     <td><%= deposit.id %></td>
-    <td><%= link_to deposit.name, edit_admin_deposit_path(deposit) %></td>
-    <td><%= number_to_pound(deposit.amount / 100) %></td>
+    <td><%= link_to deposit.email, edit_admin_deposit_path(deposit) %></td>
   </tr>
   <% end %>
 </table>

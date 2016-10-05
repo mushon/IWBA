@@ -1,0 +1,27 @@
+<%= render 'tab' %>
+<h3> 
+  All Drops
+</h3>
+
+<table class="table table-striped">
+  <tr>
+    <th>
+      #
+    </th>
+    <th>
+      Amount
+    </th>
+    <th>
+      Timestamp
+    </th>
+  </tr>
+  <% @drops.each do |drop| %>
+  <tr>
+    <td><%= drop.id %></td>
+    <td><%= drop.amount %></td>
+    <td><%= drop.created_at %></td>
+  </tr>
+  <% end %>
+</table>
+
+<%= link_to 'New Drop', new_admin_drop_path, :class => 'btn btn-default' %>

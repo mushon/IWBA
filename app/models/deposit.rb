@@ -1,3 +1,6 @@
 class Deposit < ApplicationRecord
-  belongs_to :country
+  
+  has_many :deposit_hotspots
+  has_many :hotspots, :through => :deposit_hotspots
+
 end

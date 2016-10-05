@@ -1,0 +1,12 @@
+<ul class="nav nav-pills nav-stacked">
+  <li <%= 'class=active' if params[:controller] == 'admin/drops' and params[:action] == 'edit' %>>
+    <%= link_to "Basic Information", edit_admin_drop_path(@drop) %>
+  </li>
+  <li <%= 'class=active' if params[:controller] == 'admin/features' %>>
+    <%= link_to "Options(#{@drop.features.count})", admin_drop_features_path(@drop) %>
+  </li>
+
+  <li <%= 'class=active' if params[:controller] == 'admin/stock_infos' %>>
+    <%= link_to "Stock Condition", admin_drop_stock_infos_path(@drop) %>
+  </li>
+</ul>

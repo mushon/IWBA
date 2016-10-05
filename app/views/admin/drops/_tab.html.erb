@@ -1,0 +1,14 @@
+<ul class="nav nav-tabs" role="tablist">
+  <li <%= 'class=active' if params[:action] == 'index' and params[:controller] == 'admin/drops' %>>
+    <%= link_to "All Drops(#{Drop.count})", admin_drops_path %>
+  </li>
+  <% if @drop.present? and not @drop.new_record? %>
+  <li class="active">
+    <%= link_to "#{@drop.name}", edit_admin_drop_path(@drop) %>
+  </li>
+  <% elsif @drop.present? and @drop.new_record? %>
+  <li class="active">
+    <%= link_to "New Drop", "javascript:void(0);" %>
+  </li>
+  <% end %>
+</ul>
