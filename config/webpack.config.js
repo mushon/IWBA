@@ -31,6 +31,24 @@ var config = {
   resolve: {
     root: path.join(__dirname, '..', 'webpack')
   },
+  
+  module: {
+    loaders: [
+      {
+        test: /\.json?$/,
+        loader: 'json-loader'
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel',
+        query: {
+          presets: ['react', 'es2015', 'stage-2']
+        }
+      }
+    ]
+  },
+
 
   plugins: [
     // must match config.webpack.manifest_filename
@@ -41,7 +59,9 @@ var config = {
       chunks: false,
       modules: false,
       assets: true
-    })]
+    })],
+    
+  devtool: 'source-map'
 };
 
 if (production) {

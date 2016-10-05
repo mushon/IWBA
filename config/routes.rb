@@ -17,4 +17,5 @@ Rails.application.routes.draw do
     root :to => 'deposits#index'
   end
   
+  root :to => 'welcome#index'
 end
