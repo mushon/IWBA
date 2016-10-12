@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   namespace :api do 
     resources :drops
     resources :deposits
+    resources :hotspots
   end
 
   namespace :admin do 
@@ -17,5 +18,6 @@ Rails.application.routes.draw do
     root :to => 'deposits#index'
   end
   
+  match 'water_mock' => 'welcome#water_mock', :via => :get
   root :to => 'welcome#index'
 end

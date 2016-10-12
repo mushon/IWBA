@@ -1,0 +1,76 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Iraq"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.572265625,
+          31.952162238024975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Morocco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.658203125,
+          34.23451236236987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tunisia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.755859375,
+          34.813803317113155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Singapore"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.0078125,
+          2.4601811810210052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Las Vegas, NV"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          244.59960937499997,
+          35.85343961959182
+        ]
+      }
+    }
+  ]
+}

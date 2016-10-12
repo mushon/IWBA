@@ -14,7 +14,8 @@ var production = process.env.TARGET === 'production';
 var config = {
   entry: {
     // Sources are expected to live in $app_root/webpack
-    'application': './webpack/application.js'
+    'application': './webpack/application.js',
+    'water-mock': './webpack/water-mock.js'
   },
 
   output: {

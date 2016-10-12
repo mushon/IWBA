@@ -1,30 +1,38 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { windowResize } from './actions';
+import { Header } from './components';
+import { windowResize, initHotspots } from './actions';
+import axios from 'axios';
 
 class App extends Component {
 	constructor(props){
 		super(props);
 
+    mapboxgl.accessToken = 'pk.eyJ1IjoibXVzaG9uIiwiYSI6IjY1bHhhTkEifQ.DhW2zcurHHBtmnc2FsMBqg';
 		this.handleResize = this.handleResize.bind(this);	
 	}
 
 	componentDidMount(){
 		window.addEventListener("resize", this.handleResize);
-		// $(window).on('scroll', _.throttle(this.handleScroll, 100));
 		this.handleResize();
+		this.loadData();
+	}
 
+	loadData(){
+		axios.all([axios.get('/api/hotspots.json')])
+      .then(axios.spread(response => {
+      	this.props.dispatch(initHotspots(response.data.hotspots));
+      }));
 	}
 
 	handleResize(e){
 		this.props.dispatch(windowResize(window.innerWidth, window.innerHeight));
 	}
 
-
 	render() {
 		return (
 			<div>
-				IWBA :: 
+				{ this.props.children } 
 			</div>
 		);
 	}
