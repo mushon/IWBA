@@ -1,5 +1,4 @@
 desc "hotspots sync"
-require 'JSON'
 
 namespace :hotspots do
   task :dump, [:filename] => :environment do |t, args|
