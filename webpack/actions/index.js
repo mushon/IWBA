@@ -25,3 +25,12 @@ export const updateDeposits = (name) => {
     }
   }
 }
+
+export const addTotalDrops = (drops) => {
+  return {
+    type: "ADD_TOTAL_DROPS",
+    payload: {
+      drops: drops
+    }
+  }
+}

@@ -12,11 +12,11 @@ class Congratulation extends Component {
 
           <div>
             Congratulations!<br/>
-            You deposited { this.props.droplets } drops
+            You deposited { this.props.dropletCount } drops
           </div>
           <div className="container">
             { 
-              _.map(_.range(this.props.droplets), i => {
+              _.map(_.range(this.props.dropletCount), i => {
                 return <span key={i}>💧</span>;
               }) 
             }
@@ -32,7 +32,7 @@ class Congratulation extends Component {
 
 let mapStateToProps = state => {
   return {
-    droplets: state.droplets
+    dropletCount: state.dropletCount
   }
 };
 

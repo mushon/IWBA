@@ -112,7 +112,7 @@ class MapInvest extends Component {
       <section className="congratulation">
 
         {
-          (this.props.droplets == this.props.remainDroplets && this.props.droplets != 0) ? 
+          (this.props.dropletCount == this.props.remainDroplets && this.props.dropletCount != 0) ? 
           <div>
             You deposited { this.props.remainDroplets } drops<br/>
             Where would you like to invest them?
@@ -142,10 +142,10 @@ class MapInvest extends Component {
 
 let mapStateToProps = state => {
   
-  let remainDroplets = Math.max(state.droplets - _.sumBy(state.deposits, deposit => { return deposit.amount }), 0);
+  let remainDroplets = Math.max(state.dropletCount - _.sumBy(state.deposits, deposit => { return deposit.amount }), 0);
 
   return {
-    droplets: state.droplets,
+    dropletCount: state.dropletCount,
     screenWidth: state.screenWidth,
     screenHeight: state.screenHeight,
     hotspots: state.hotspots,

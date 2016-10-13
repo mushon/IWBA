@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <header>
         <div>
-          { String(this.props.droplets) } drops
+          { String(this.props.dropletCount) } drops
         </div>
         <div>
           IWBA
@@ -18,7 +18,7 @@ class Header extends Component {
 
 let mapStateToProps = state => {
   return {
-    droplets: state.droplets
+    dropletCount: state.dropletCount
   }
 }
 export default connect(mapStateToProps)(Header);

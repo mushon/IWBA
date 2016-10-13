@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   namespace :api do 
-    resources :drops
+    resources :drops do 
+      collection do 
+        get 'latest'
+      end
+    end
+
     resources :deposits
     resources :hotspots
   end
