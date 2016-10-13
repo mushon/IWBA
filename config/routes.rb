@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     resources :drops do 
       collection do 
         get 'latest'
+        get 'water'
       end
     end
 

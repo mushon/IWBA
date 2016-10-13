@@ -18,4 +18,16 @@ class Api::DropsController < ApplicationController
     end
   end
 
+  def water
+    @drop = Drop.new
+    @drop.amount = params[:amount]
+    
+    if @drop.save
+      Drop.first.destroy if Drop.count > 1000
+      render json: { success: true, drop: { created_at: @drop.created_at, amount: @drop.amount } }
+    else
+      render json: { success: false }
+    end
+  end
+
 end
