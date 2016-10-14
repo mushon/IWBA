@@ -14,7 +14,8 @@ class MapInvest extends Component {
     if (this.props.hotspots.features.length > 0 && _.isUndefined(this.map)){
        this.map = new mapboxgl.Map({
         container: this.refMapContainer,
-        style: 'mapbox://styles/mushon/cittuq85x000s2irqfdmd1kdr'
+        style: 'mapbox://styles/mushon/cittuq85x000s2irqfdmd1kdr',
+        doubleClickZoom: false
       });
       
       this.map.on('style.load', this.handleStyleLoad.bind(this));
@@ -25,7 +26,8 @@ class MapInvest extends Component {
     if (newProps.hotspots.features.length > 0 && _.isUndefined(this.map) ){
        this.map = new mapboxgl.Map({
         container: this.refMapContainer,
-        style: 'mapbox://styles/mushon/cittuq85x000s2irqfdmd1kdr'
+        style: 'mapbox://styles/mushon/cittuq85x000s2irqfdmd1kdr',
+        doubleClickZoom: false
       });
       
       this.map.on('style.load', this.handleStyleLoad.bind(this));
@@ -71,6 +73,9 @@ class MapInvest extends Component {
 
     this.map.on("mousedown", this.handleMouseDown.bind(this));
     this.map.on("mouseup", this.handleMouseUp.bind(this));
+
+    this.map.on("touchstart", this.handleMouseDown.bind(this));
+    this.map.on("touchend", this.handleMouseUp.bind(this));
     this.map.on("mousemove", this.handleMouseMove.bind(this));
   }
 
