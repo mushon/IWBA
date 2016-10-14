@@ -13,7 +13,7 @@ development:
   encoding: unicode
   database: water_deposit_development
   pool: 5
-  username: mushon
+  username: wonyoungso
   host: localhost
   password:
 
@@ -23,7 +23,7 @@ test:
   host: localhost
   database: water_deposit_test
   pool: 5
-  username: mushon
+  username: wonyoungso
   password:
 
 production:
