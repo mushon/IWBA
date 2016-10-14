@@ -1,5 +1,5 @@
 # MySQL.  Versions 4.1 and 5.0 are recommended.
-# 
+#
 # Install the MYSQL driver
 #   gem install mysql2
 #
@@ -13,7 +13,7 @@ development:
   encoding: unicode
   database: water_deposit_development
   pool: 5
-  username: wonyoungso
+  username: mushon
   host: localhost
   password:
 
@@ -23,7 +23,7 @@ test:
   host: localhost
   database: water_deposit_test
   pool: 5
-  username: wonyoungso
+  username: mushon
   password:
 
 production:
