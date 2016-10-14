@@ -71,6 +71,9 @@ class MapInvest extends Component {
 
     this.map.on("mousedown", this.handleMouseDown.bind(this));
     this.map.on("mouseup", this.handleMouseUp.bind(this));
+
+    this.map.on("touchstart", this.handleMouseDown.bind(this));
+    this.map.on("touchend", this.handleMouseUp.bind(this));
     this.map.on("mousemove", this.handleMouseMove.bind(this));
   }
 
