@@ -32,9 +32,10 @@ Rails.application.configure do
     :user_name => ENV['SENDGRID_USERNAME'],
     :password => ENV['SENDGRID_PASSWORD'],
     :address => 'smtp.sendgrid.net',
-    :domain => 'smtp.sendgrid.net',
+    :domain => 'iwba.herokuapp.com',
     :port => '587',
-    :authentication => :cram_md5
+    :authentication => :plain,
+    :enable_starttls_auto => true
   }
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
