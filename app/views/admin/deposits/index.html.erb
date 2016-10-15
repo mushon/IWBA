@@ -11,13 +11,27 @@
     <th>
       Email
     </th>
+    <th>
+      Amount
+    </th>
+    <th>
+      Delete
+    </th>
   </tr>
   <% @deposits.each do |deposit| %>
   <tr>
     <td><%= deposit.id %></td>
     <td><%= link_to deposit.email, edit_admin_deposit_path(deposit) %></td>
+    <td>
+      <%= deposit.amount %><br/><br/>
+      <% deposit.deposit_hotspots.each do |dh| %>
+        <%= dh.hotspot.name %> / <%= dh.amount %><br/>
+      <% end %>
+    </td>
+    <td><%= link_to "Delete", admin_deposit_path(deposit), data: {method: :delete, confirm: "are you sure?"} %></td>
   </tr>
   <% end %>
 </table>
 
-<%= link_to 'New Deposit', new_admin_deposit_path, :class => 'btn btn-default' %>
+<%= will_paginate @deposits %>
+

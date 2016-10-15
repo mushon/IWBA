@@ -7,7 +7,12 @@ Rails.application.routes.draw do
       end
     end
 
-    resources :deposits
+    resources :deposits do 
+      collection do 
+        post 'batch_create'
+      end
+    end
+
     resources :hotspots
   end
 

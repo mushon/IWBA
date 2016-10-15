@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Header } from './components';
-import { windowResize, initHotspots } from './actions';
+import { windowResize, initHotspots, updateAuthToken } from './actions';
 import axios from 'axios';
 
 class App extends Component {
@@ -13,6 +13,7 @@ class App extends Component {
 	}
 
 	componentDidMount(){
+		this.props.dispatch(updateAuthToken(document.head.querySelector("[name=csrf-token]").content));
 		window.addEventListener("resize", this.handleResize);
 		this.handleResize();
 		this.loadData();

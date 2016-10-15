@@ -40,7 +40,11 @@ class PourWater extends Component {
             }) 
           }
 
-          <Link to="/3-congratulation">confirm</Link>
+          {
+            this.props.dropletCount > 0 ? 
+            <Link to="/3-congratulation">confirm</Link>    
+            : null
+          }
         </div>
 
       </section>

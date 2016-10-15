@@ -34,3 +34,28 @@ export const addTotalDrops = (drops) => {
     }
   }
 }
+
+export const updateAuthToken = (authToken) => {
+  return {
+    type: "UPDATE_AUTH_TOKEN",
+    payload: {
+      authToken: authToken
+    }
+  }
+}
+
+export const changeInvestorEmailAddress = (investorEmail) => {
+  return {
+    type: "CHANGE_EMAIL_ADDRESS",
+    payload: {
+      investorEmail: investorEmail
+    }
+  }
+}
+
+export const commitReset = () => {
+  return {
+    type: 'RESET',
+    payload: {}
+  }
+}

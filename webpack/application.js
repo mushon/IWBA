@@ -9,6 +9,8 @@ import Start from './pages/Start';
 import PourWater from './pages/PourWater';
 import Congratulation from './pages/Congratulation';
 import MapInvest from './pages/MapInvest';
+import SendingEmail from './pages/SendingEmail';
+import Result from './pages/Result';
 
 let store = createStore(defaultReducer);
 
@@ -21,6 +23,8 @@ render(
         <Route path="/2-pour-water" component={PourWater}/>
         <Route path="/3-congratulation" component={Congratulation}/>
         <Route path="/4-map-invest" component={MapInvest} />
+        <Route path="/5-sending-email" component={SendingEmail} />
+        <Route path="/6-result" component={Result} />
       </Route>
     </Router>
 

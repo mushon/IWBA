@@ -1,6 +1,7 @@
 class Admin::DepositsController < Admin::AdminController
   def index
-    @deposits = Deposit.order("created_at DESC")
+    @page = params[:page] || 1
+    @deposits = Deposit.order("created_at DESC").paginate(per_page: 20, page: @page)
   end
 
   def new

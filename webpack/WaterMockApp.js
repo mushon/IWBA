@@ -5,7 +5,7 @@ class WaterMockApp extends Component {
   constructor(props){
     super(props);
     this.state = {
-      amount: 15
+      amount: 7
     };
   }
   
@@ -37,7 +37,7 @@ class WaterMockApp extends Component {
     return (
       <div>
         <div>
-          <input type="text" ref={ c => {this.refTextBox = c; }} value={this.state.amount} onChange={this.handleChange.bind(this)} />
+          <input type="text" ref={ c => {this.refTextBox = c; }} value={this.state.amount} onChange={this.handleChange.bind(this)} />ml
         </div>
         <a href="javascrit:void(0);" onClick={this.handleClick.bind(this)}>increase</a>
       </div>

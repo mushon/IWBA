@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link, hashHistory } from 'react-router';
 import _ from 'lodash';
 import { Header } from '../components';
 import { connect } from 'react-redux';
@@ -90,7 +90,7 @@ class MapInvest extends Component {
     if (features.length) {
 
       this.map.setFilter("points-down", ["==", "name", features[0].properties.name]);
-      console.log("mouseDown");
+
       
       clearInterval(this.downTimer);
       this.downTimer = setInterval(() =>{
@@ -108,13 +108,20 @@ class MapInvest extends Component {
 
     clearInterval(this.downTimer);
     this.map.setFilter("points-down", ["==", "name", ""]);
-    console.log("mouseUp");
+  }
+
+  handleContainerClick(e){
+    if (this.props.remainDroplets == 0) {
+      hashHistory.push("/5-sending-email");
+    }
+    
   }
 
   render() {
 
     return (
-      <section className="congratulation">
+
+      <section className="congratulation" onClick={this.handleContainerClick.bind(this)}>
 
         {
           (this.props.dropletCount == this.props.remainDroplets && this.props.dropletCount != 0) ? 
@@ -126,18 +133,16 @@ class MapInvest extends Component {
           <div>
             You have { this.props.remainDroplets } drops left<br/>
             Smartly invested!
-          </div> : 
+          </div> :
           <div>
             You have { this.props.remainDroplets } drops left<br/>
             Where else would you like to invest them?
           </div>
         }
         
-
         <div className="container" ref={ c => { this.refMapContainer = c; }} style={{ width: this.props.screenWidth - 100, height: this.props.screenHeight - 100 }}>
-          
+              
         </div>
-
       </section>
 
 

@@ -9,18 +9,38 @@ let initialState = {
     type: "FeatureCollection",
     features: []
   },
-  deposits: []
+  authToken: '',
+  deposits: [],
+  investorEmail: ''
 };
 
 var defaultReducer = (state = initialState, action) => {
   let newState;
 
   switch(action.type) {
+    case 'RESET': 
+      return {
+        ...state,
+        droplets: [],
+        dropletCount: 0,
+        deposits: [],
+        investorEmail: ''
+      }
     case 'WINDOW_RESIZE':
       return {
         ...state,
         screenWidth: action.payload.screenWidth,
         screenHeight: action.payload.screenHeight
+      };
+    case 'UPDATE_AUTH_TOKEN':
+      return {
+        ...state,
+        authToken: action.payload.authToken
+      }
+    case 'CHANGE_EMAIL_ADDRESS':
+      return {
+        ...state,
+        investorEmail: action.payload.investorEmail
       };
     case 'INIT_HOTSPOTS':
       return {
@@ -32,13 +52,11 @@ var defaultReducer = (state = initialState, action) => {
 
       var deposit = _.find(newState.deposits, deposit => { return deposit.name == action.payload.name });
       if (_.isUndefined(deposit)) {
-        deposit = { name: action.payload.name, amount: 1 };
+        deposit = { name: action.payload.name, amount: 2 };
         newState.deposits.push(deposit);
       } else {
-        deposit.amount = deposit.amount + 1;
+        deposit.amount = deposit.amount + 2;
       }
-
-      console.log(newState);
       return newState;
     case 'ADD_TOTAL_DROPS':
       newState = { ...state };
@@ -47,6 +65,7 @@ var defaultReducer = (state = initialState, action) => {
         var result = _.find(newState.droplets, droplet => { return droplet.id == drop.id; });
         
         if (_.isUndefined(result)) {
+          drop.amount *= 20;
           newState.droplets.push(drop);
         }
       });

@@ -14,12 +14,16 @@
     <th>
       Position
     </th>
+    <th>
+      Invested Drops
+    </th>
   </tr>
   <% @hotspots.each do |hotspot| %>
   <tr>
     <td><%= hotspot.id %></td>
     <td><%= hotspot.name %></td>
     <td><%= "#{hotspot.lon}, #{hotspot.lat}" %></td>
+    <td><%= hotspot.deposit_hotspots.sum(:amount) %></td>
   </tr>
   <% end %>
 </table>
