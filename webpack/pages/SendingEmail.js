@@ -30,7 +30,7 @@ class SendingEmail extends Component {
 
   handleSubmit(e){
     e.preventDefault();
-    if (this.state.disabled) {
+    if (!this.state.disabled) {
       let instance = axios.create({
         headers: {
           'X-CSRF-Token': this.props.authToken
