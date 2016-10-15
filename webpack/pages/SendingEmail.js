@@ -13,6 +13,10 @@ class SendingEmail extends Component {
 
     this.handleEmailChange = this.handleEmailChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+
+    this.state = {
+      submitted: false
+    }
   }
 
   componentDidMount(){
@@ -26,26 +30,33 @@ class SendingEmail extends Component {
 
   handleSubmit(e){
     e.preventDefault();
-    let instance = axios.create({
-      headers: {
-        'X-CSRF-Token': this.props.authToken
-      }
-    })
+    if (this.state.disabled) {
+      let instance = axios.create({
+        headers: {
+          'X-CSRF-Token': this.props.authToken
+        }
+      })
 
-    instance.post('/api/deposits/batch_create.json', {
-      email: this.props.investorEmail,
-      deposits: this.props.deposits
-    })
-    .then(function (response) {
-      if (response.data.success) {
-        hashHistory.push("/6-result");
-      } else {
-        console.log(response);
-      }
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+      instance.post('/api/deposits/batch_create.json', {
+        email: this.props.investorEmail,
+        deposits: this.props.deposits
+      })
+      .then(function (response) {
+        if (response.data.success) {
+          hashHistory.push("/6-result");
+        } else {
+          console.log(response);
+        }
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+
+      this.setState({
+        submitted: true
+      })
+    }
+   
   }
 
   handleEmailChange(e){
