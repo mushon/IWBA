@@ -22,3 +22,5 @@
 # Added by webpack-rails
 /node_modules
 ./config/database.yml
+
+app/.DS_Store
