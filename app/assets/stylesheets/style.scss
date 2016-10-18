@@ -11,6 +11,9 @@ body {
 header {
   margin: 29px 68px;
   font-size:80px;
+  span {
+    font-size: 40px;
+  }
 }
 
 #logo {
@@ -37,9 +40,9 @@ header {
 
 .drops {
   width: 100%;
-  min-height: 600px;
+  min-height: 520px;
   position: absolute;
-  bottom: 0;
+  bottom: 80px;
   margin:0;
   padding:0;
   li {
