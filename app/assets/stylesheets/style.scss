@@ -51,6 +51,11 @@ header {
     overflow: hidden;
     text-indent: -999999px;
   }
+  &.small li {
+    background-size: contain;
+    width: 1%;
+    height: 12px;
+  }
 }
 
 .btn {
@@ -114,7 +119,15 @@ header {
   #logo { display: none; }
 }
 
-
+.congratulation {
+  header {
+    font-size: 40px;
+    a {
+      color: $text;
+      text-decoration: none;
+    }
+  }
+}
 
 //ANIMATIONS
 

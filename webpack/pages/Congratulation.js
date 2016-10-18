@@ -7,23 +7,26 @@ import { connect } from 'react-redux';
 class Congratulation extends Component {
   render() {
     return (
-      <Link to="/4-map-invest">
+
         <section className="congratulation">
 
-          <div>
+          <header>
+            <Link to="/4-map-invest">
             Congratulations!<br/>
             You deposited { this.props.dropletCount } drops
-          </div>
+            </Link>
+          </header>
           <div className="container">
-            { 
+            <ul className="drops small">
+            {
               _.map(_.range(this.props.dropletCount), i => {
-                return <span key={i}>💧</span>;
-              }) 
+                return <li key={i}>💧</li>;
+              })
             }
+            </ul>
           </div>
 
         </section>
-      </Link>
 
 
     );

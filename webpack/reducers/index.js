@@ -18,7 +18,7 @@ var defaultReducer = (state = initialState, action) => {
   let newState;
 
   switch(action.type) {
-    case 'RESET': 
+    case 'RESET':
       return {
         ...state,
         droplets: [],
@@ -63,13 +63,13 @@ var defaultReducer = (state = initialState, action) => {
 
       _.each(action.payload.drops, drop => {
         var result = _.find(newState.droplets, droplet => { return droplet.id == drop.id; });
-        
+
         if (_.isUndefined(result)) {
-          drop.amount *= 20;
+          drop.amount *= 17; //going for something less round
           newState.droplets.push(drop);
         }
       });
-      
+
       newState.dropletCount = _.sumBy(newState.droplets, droplet => { return droplet.amount; });
 
       return newState;
