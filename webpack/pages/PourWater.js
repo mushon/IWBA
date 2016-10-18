@@ -34,15 +34,17 @@ class PourWater extends Component {
 
         <Header />
         <div className="container">
-           { 
+          <ul className="drops">
+           {
             _.map(_.range(this.props.dropletCount), i => {
-              return <span key={i}>💧</span>;
-            }) 
+              return <li key={i}>💧</li>;
+            })
           }
+          </ul>
 
           {
-            this.props.dropletCount > 0 ? 
-            <Link to="/3-congratulation">confirm</Link>    
+            this.props.dropletCount > 0 ?
+            <Link to="/3-congratulation" className="btn confirm">confirm</Link>
             : null
           }
         </div>

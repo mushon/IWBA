@@ -8,7 +8,7 @@ class Header extends Component {
         <div>
           { String(this.props.dropletCount) } drops
         </div>
-        <div>
+        <div id="logo">
           IWBA
         </div>
       </header>

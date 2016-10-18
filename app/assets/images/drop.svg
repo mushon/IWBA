@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="47px" height="61px" viewBox="0 0 47 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>drop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#00ACFC" offset="0%"></stop>
+            <stop stop-color="#0162D0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="drop">
+            <g transform="translate(9.000000, 11.000000)" id="Group-2">
+                <g>
+                    <path d="M15.0480032,38.0467023 C22.8472988,38.0467023 29.1698772,31.7241239 29.1698772,23.9248283 C29.2746855,11.5681885 15.0480032,0.778096779 15.0480032,0.778096779 C15.0480032,0.778096779 1.08534689,11.5681885 0.926129133,23.9248283 C0.926129133,31.7241239 7.2487075,38.0467023 15.0480032,38.0467023 Z" id="Oval" stroke="#FFFFFF" stroke-width="5" fill="url(#linearGradient-1)"></path>
+                    <path d="M5.58311537,21.7102605 C6.29262276,22.17102 7.20439231,19.4011455 9.09741902,16.48614 C10.9904457,13.5711345 12.3241429,11.2639437 11.6146355,10.8031842 C10.9051281,10.3424247 9.40807792,12.3319842 7.5150512,15.2469897 C5.62202449,18.1619952 4.87360798,21.249501 5.58311537,21.7102605" id="Oval-2" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
