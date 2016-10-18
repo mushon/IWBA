@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <header>
         <div>
-          { String(this.props.dropletCount) } <span>drops</span>
+          <strong>{ String(this.props.dropletCount) }</strong> drops
         </div>
         <div id="logo">
           IWBA

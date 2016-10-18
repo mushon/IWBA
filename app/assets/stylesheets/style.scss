@@ -9,11 +9,7 @@ body {
 }
 
 header {
-  margin: 29px 68px;
-  font-size:80px;
-  span {
-    font-size: 40px;
-  }
+  margin: 29px 58px;
 }
 
 #logo {
@@ -99,9 +95,14 @@ header {
 }
 
 .start {
-  font-size:80px;
+  header strong {
+    font-size:80px;
+    font-weight: 400;
+  }
   .container {
+    font-size: 60px;
     padding: 43px;
+    height: 514px;
   }
   a{
     position: absolute;
@@ -109,16 +110,21 @@ header {
     height: 61px;
     width: 47px;
     overflow: hidden;
-    background-image: url('/assets/drop-pending.svg');
+    background: url('/assets/drop-pending.svg') no-repeat center top;
     background-size: contain;
     bottom: 85px;
     left: 50%;
     margin: -23px;
     text-indent: -99999px;
+    animation: dripping 3s infinite;
   }
 }
 
 .pour-water{
+  header strong {
+    font-size:80px;
+    font-weight: 400;
+  }
   #logo { display: none; }
 }
 
@@ -133,6 +139,12 @@ header {
 }
 
 //ANIMATIONS
+
+@keyframes dripping {
+  0%   {height: 11px; bottom: 125px}
+  90%  {bottom: 85px}
+  100% {bottom: -40px}
+}
 
 @keyframes slidein {
   0%   {opacity: 0; bottom: 0px}

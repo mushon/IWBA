@@ -13,7 +13,7 @@ class Congratulation extends Component {
           <header>
             <Link to="/4-map-invest">
             Congratulations!<br/>
-            You deposited { this.props.dropletCount } drops
+            You deposited <strong>{ this.props.dropletCount }</strong> drops
             </Link>
           </header>
           <div className="container">

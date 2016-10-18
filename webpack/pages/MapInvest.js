@@ -7,7 +7,7 @@ import { updateDeposits } from '../actions';
 
 class MapInvest extends Component {
   constructor(props){
-    super(props); 
+    super(props);
   }
 
   componentDidMount(){
@@ -17,7 +17,7 @@ class MapInvest extends Component {
         style: 'mapbox://styles/mushon/cittuq85x000s2irqfdmd1kdr',
         doubleClickZoom: false
       });
-      
+
       this.map.on('style.load', this.handleStyleLoad.bind(this));
     }
   }
@@ -29,17 +29,17 @@ class MapInvest extends Component {
         style: 'mapbox://styles/mushon/cittuq85x000s2irqfdmd1kdr',
         doubleClickZoom: false
       });
-      
+
       this.map.on('style.load', this.handleStyleLoad.bind(this));
     }
   }
 
   componentDidUpdate(){
     if (!_.isUndefined(this.map)){
-      this.map.resize();  
+      this.map.resize();
     }
   }
-  
+
   handleStyleLoad(e){
     this.map.addSource("points", {
       "type": "geojson",
@@ -58,7 +58,7 @@ class MapInvest extends Component {
         "circle-opacity": 0.5
       }
     });
-    
+
     this.map.addLayer({
       "id": "points-down",
       "type": "circle",
@@ -91,7 +91,7 @@ class MapInvest extends Component {
 
       this.map.setFilter("points-down", ["==", "name", features[0].properties.name]);
 
-      
+
       clearInterval(this.downTimer);
       this.downTimer = setInterval(() =>{
         this.props.dispatch(updateDeposits(features[0].properties.name));
@@ -114,7 +114,7 @@ class MapInvest extends Component {
     if (this.props.remainDroplets == 0) {
       hashHistory.push("/5-sending-email");
     }
-    
+
   }
 
   render() {
@@ -124,24 +124,24 @@ class MapInvest extends Component {
       <section className="congratulation" onClick={this.handleContainerClick.bind(this)}>
 
         {
-          (this.props.dropletCount == this.props.remainDroplets && this.props.dropletCount != 0) ? 
+          (this.props.dropletCount == this.props.remainDroplets && this.props.dropletCount != 0) ?
           <div>
-            You deposited { this.props.remainDroplets } drops<br/>
+            You deposited <strong>{ this.props.remainDroplets }</strong> drops<br/>
             Where would you like to invest them?
-          </div> : 
-          this.props.remainDroplets == 0 ? 
+          </div> :
+          this.props.remainDroplets == 0 ?
           <div>
-            You have { this.props.remainDroplets } drops left<br/>
+            You have <strong>{ this.props.remainDroplets }</strong> drops left<br/>
             Smartly invested!
           </div> :
           <div>
-            You have { this.props.remainDroplets } drops left<br/>
+            You have <strong>{ this.props.remainDroplets }</strong> drops left<br/>
             Where else would you like to invest them?
           </div>
         }
-        
+
         <div className="container" ref={ c => { this.refMapContainer = c; }} style={{ width: this.props.screenWidth - 100, height: this.props.screenHeight - 100 }}>
-              
+
         </div>
       </section>
 
@@ -151,7 +151,7 @@ class MapInvest extends Component {
 }
 
 let mapStateToProps = state => {
-  
+
   let remainDroplets = Math.max(state.dropletCount - _.sumBy(state.deposits, deposit => { return deposit.amount }), 0);
 
   return {
