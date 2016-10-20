@@ -25,7 +25,7 @@ class SendingEmail extends Component {
   }
 
   componentWillUnmount(){
-  
+
   }
 
   handleSubmit(e){
@@ -56,7 +56,7 @@ class SendingEmail extends Component {
         submitted: true
       })
     }
-   
+
   }
 
   handleEmailChange(e){
@@ -74,8 +74,8 @@ class SendingEmail extends Component {
 
         <div className="container">
           <form onSubmit={this.handleSubmit}>
-            <input type="email" value={this.props.investorEmail} name="investorEmail" onChange={this.handleEmailChange} placeholder="your email here" />
-            <input type="submit" value="SUBMIT" /> 
+            <input className="input-email" type="email" value={this.props.investorEmail} name="investorEmail" onChange={this.handleEmailChange} placeholder="your email here" />
+            <input className="btn" type="submit" value="SUBMIT" /> 
           </form>
         </div>
 

@@ -13,7 +13,7 @@ body, div, p, input {
 }
 
 header {
-  margin: 29px 58px;
+  margin: 30px 58px 10px;
 }
 
 #logo {
@@ -30,12 +30,12 @@ header {
 .container{
   background:$bg;
   position: fixed;
-  top: 145px;
+  top: 141px;
   bottom: 25px;
   left: 25px;
   right: 25px;
   overflow: hidden;
-  height: 600px;
+  // height: 600px;
 }
 
 .drops {
@@ -138,6 +138,48 @@ header {
     a {
       color: $text;
       text-decoration: none;
+    }
+  }
+}
+
+.sending-email {
+  .container{
+    text-align: center;
+
+    form {
+      display: inline-block;
+      position: relative;
+      text-align: left;
+      margin-top: 150px;
+      background: #FFFFFF;
+      border: 2px solid $text;
+      border-radius: 36px;
+      height: 58px;
+      width: 528px;
+      padding-left: 15px;
+      .input-email {
+        font-size: 24px;
+        color: $text;
+        border: none;
+        border-radius: 36px;
+        width: 400px;
+        background: none;
+        &::placeholder {
+
+        }
+      }
+      .btn {
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        width: 128px;
+        height: 45px;
+        background: $text;
+        color: white;
+        font-size: 24px;
+        border: 0;
+        line-height: 1.8em;
+      }
     }
   }
 }

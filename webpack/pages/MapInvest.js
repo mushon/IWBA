@@ -122,7 +122,7 @@ class MapInvest extends Component {
     return (
 
       <section className="congratulation" onClick={this.handleContainerClick.bind(this)}>
-
+        <header>
         {
           (this.props.dropletCount == this.props.remainDroplets && this.props.dropletCount != 0) ?
           <div>
@@ -139,8 +139,9 @@ class MapInvest extends Component {
             Where else would you like to invest them?
           </div>
         }
+        </header>
 
-        <div className="container" ref={ c => { this.refMapContainer = c; }} style={{ width: this.props.screenWidth - 100, height: this.props.screenHeight - 100 }}>
+        <div className="container" ref={ c => { this.refMapContainer = c; }} style={{ width: this.props.screenWidth - 50, height: this.props.screenHeight - 168 }}>
 
         </div>
       </section>
