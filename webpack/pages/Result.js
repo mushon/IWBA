@@ -12,7 +12,7 @@ class Result extends Component {
   }
 
   componentDidMount(){
-    setTimeout(this.handleReset, 3000);
+    setTimeout(this.handleReset, 5000);
   }
 
   handleReset(e){
@@ -24,12 +24,15 @@ class Result extends Component {
     return (
       <section className="result" onClick={this.handleReset}>
 
-        <div>
+        <header>
           Thanks, we'll be in touch.<br/>
-          Take care and remember, every drop is counted!
-        </div>
+        </header>
         <div className="container">
-          IWBA
+        Take care and remember,<br/>
+        every drop is counted!
+          <div id="logo">
+            IWBA
+          </div>
         </div>
 
       </section>

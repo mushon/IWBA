@@ -184,6 +184,20 @@ header {
   }
 }
 
+.result {
+  header {
+    padding-top: 1.3em;
+  }
+  .container {
+    padding: 10px 42px;
+
+    #logo {
+      bottom: 25px;
+      top: initial;
+    }
+  }
+}
+
 //ANIMATIONS
 
 @keyframes dripping {
