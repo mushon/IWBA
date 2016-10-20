@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'no-replay@iwba.org'
+  default from: 'no-reply@iwba.org'
   layout 'mailer'
 end
