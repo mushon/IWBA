@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { hashHistory, Link } from 'react-router';
 import _ from 'lodash';
 import { Header } from '../components';
 import { connect } from 'react-redux';
 
 class Congratulation extends Component {
+  onClick(e){
+    hashHistory.push("/4-map-invest");
+  }
+
   render() {
     return (
 
-        <section className="congratulation">
+        <section className="congratulation" onClick={this.onClick.bind(this)}>
 
           <header>
             <Link to="/4-map-invest">

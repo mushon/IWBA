@@ -1,8 +1,40 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link, hashHistory } from 'react-router';
 import { Header } from '../components';
+import axios from 'axios';
+import moment from 'moment';
+import { connect } from 'react-redux';
+import { addTotalDrops } from '../actions';
 
 class Start extends Component {
+  componentDidMount(){
+    this.pourWaterStageTime = moment();
+    clearInterval(this.downTimer);
+    this.downTimer = setInterval(() =>{
+      axios.get(`/api/drops/latest.json?pour_water_stage_time=${this.pourWaterStageTime.toISOString()}`)
+        .then(response => {
+          this.props.dispatch(addTotalDrops(response.data.drops));
+
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+
+    }, 1000);
+
+  }
+
+  componentWillUnmount(){
+    clearInterval(this.downTimer);
+  }
+
+  componentWillReceiveProps(newProps){
+    if (newProps.dropletCount > 0) {
+      hashHistory.push("2-pour-water");
+    }
+  }
+
+
   render() {
     return (
       <section className="start">
@@ -22,4 +54,10 @@ class Start extends Component {
   }
 }
 
-export default Start;
+let mapStateToProps = state => {
+  return {
+    dropletCount: state.dropletCount
+  }
+};
+
+export default connect(mapStateToProps)(Start);

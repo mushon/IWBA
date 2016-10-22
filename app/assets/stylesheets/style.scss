@@ -12,6 +12,12 @@ body, div, p, input {
   font-family:Miriam Libre;
 }
 
+:focus {
+  outline-style:none;
+  box-shadow:none;
+  border-color:transparent;
+}
+
 header {
   margin: 30px 58px 10px;
 }
