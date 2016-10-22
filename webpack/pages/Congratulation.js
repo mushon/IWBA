@@ -5,11 +5,17 @@ import { Header } from '../components';
 import { connect } from 'react-redux';
 
 class Congratulation extends Component {
+  constructor(props){
+    super(props);
+  }
+
   onClick(e){
     hashHistory.push("/4-map-invest");
   }
 
   render() {
+    let dropsClassName = this.props.dropClassScale(this.props.dropletCount);
+
     return (
 
         <section className="congratulation" onClick={this.onClick.bind(this)}>
@@ -21,7 +27,7 @@ class Congratulation extends Component {
             </Link>
           </header>
           <div className="container">
-            <ul className="drops small">
+            <ul className={`drops${dropsClassName}`}>
             {
               _.map(_.range(this.props.dropletCount), i => {
                 return <li key={i}>💧</li>;
@@ -39,7 +45,8 @@ class Congratulation extends Component {
 
 let mapStateToProps = state => {
   return {
-    dropletCount: state.dropletCount
+    dropletCount: state.dropletCount,
+    dropClassScale: state.dropClassScale
   }
 };
 

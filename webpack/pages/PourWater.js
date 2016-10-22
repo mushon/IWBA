@@ -8,6 +8,10 @@ import axios from 'axios';
 import moment from 'moment';
 
 class PourWater extends Component {
+  constructor(props){
+    super(props);
+  }
+
   componentDidMount(){
     this.pourWaterStageTime = moment();
     clearInterval(this.downTimer);
@@ -21,7 +25,6 @@ class PourWater extends Component {
         });
 
     }, 1000);
-
   }
 
   componentWillUnmount(){
@@ -29,12 +32,14 @@ class PourWater extends Component {
   }
 
   render() {
+    let dropsClassName = this.props.dropClassScale(this.props.dropletCount);
+
     return (
       <section className="pour-water">
 
         <Header />
         <div className="container">
-          <ul className="drops">
+          <ul className={`drops${dropsClassName}`}>
            {
             _.map(_.range(this.props.dropletCount), i => {
               return <li key={i}>💧</li>;
@@ -58,7 +63,8 @@ class PourWater extends Component {
 
 let mapStateToProps = state => {
   return {
-    dropletCount: state.dropletCount
+    dropletCount: state.dropletCount,
+    dropClassScale: state.dropClassScale
   }
 };
 

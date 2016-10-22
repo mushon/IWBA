@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import { scaleQuantize } from 'd3';
 
 let initialState = {
   screenWidth: 1024,
@@ -11,7 +12,8 @@ let initialState = {
   },
   authToken: '',
   deposits: [],
-  investorEmail: ''
+  investorEmail: '',
+  dropClassScale: scaleQuantize().domain([0, 5000]).range([" scale1", " scale2", " scale3"])
 };
 
 var defaultReducer = (state = initialState, action) => {
