@@ -19,7 +19,7 @@ class PourWater extends Component {
   componentDidMount(){
     this.setAnim(this.props);
   }
-  
+
   componentWillReceiveProps(newProps){
     this.setAnim(newProps);
   }
@@ -57,7 +57,7 @@ class PourWater extends Component {
         clearInterval(this.intervalID);
         console.log("cleared");
       }
-    }, 10);
+    }, 1);
   }
 
   render() {
@@ -69,13 +69,13 @@ class PourWater extends Component {
         <Header />
         <div className="container">
           <ul className={`drops${dropsClassName}`}>
-            { 
+            {
               _.map(_.range(this.state.animDropletCount), i => {
                 return <li key={i}>💧</li>;
               })
             }
           </ul>
-          
+
 
           {
             this.props.dropletCount > 0 ?
