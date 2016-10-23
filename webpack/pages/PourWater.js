@@ -10,9 +10,22 @@ import moment from 'moment';
 class PourWater extends Component {
   constructor(props){
     super(props);
+
+    this.state = {
+      animDropletCount: 0
+    };
   }
 
   componentDidMount(){
+    this.setAnim(this.props);
+  }
+  
+  componentWillReceiveProps(newProps){
+    this.setAnim(newProps);
+  }
+
+  componentDidMount(){
+    this.setAnim(this.props);
     this.pourWaterStageTime = moment();
     clearInterval(this.downTimer);
     this.downTimer = setInterval(() =>{
@@ -29,6 +42,22 @@ class PourWater extends Component {
 
   componentWillUnmount(){
     clearInterval(this.downTimer);
+    clearInterval(this.intervalID);
+  }
+
+
+  setAnim(props){
+    this.intervalID = clearInterval(this.intervalID);
+    this.intervalID = setInterval(() => {
+      if (this.state.animDropletCount < props.dropletCount) {
+        this.setState({
+          animDropletCount: this.state.animDropletCount + 1
+        });  
+      } else {
+        clearInterval(this.intervalID);
+        console.log("cleared");
+      }
+    }, 10);
   }
 
   render() {
@@ -40,12 +69,13 @@ class PourWater extends Component {
         <Header />
         <div className="container">
           <ul className={`drops${dropsClassName}`}>
-           {
-            _.map(_.range(this.props.dropletCount), i => {
-              return <li key={i}>💧</li>;
-            })
-          }
+            { 
+              _.map(_.range(this.state.animDropletCount), i => {
+                return <li key={i}>💧</li>;
+              })
+            }
           </ul>
+          
 
           {
             this.props.dropletCount > 0 ?
