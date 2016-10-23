@@ -13,7 +13,7 @@ let initialState = {
   authToken: '',
   deposits: [],
   investorEmail: '',
-  dropClassScale: scaleQuantize().domain([0, 5000]).range([" scale1", " scale2", " scale3"])
+  dropClassScale: scaleQuantize().domain([0, 1500]).range([" scale1", " scale2", " scale3", " scale4", " scale5", " scale6", " scale7", " scale8", " scale9"])
 };
 
 var defaultReducer = (state = initialState, action) => {
