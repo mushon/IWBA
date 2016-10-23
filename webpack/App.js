@@ -17,6 +17,22 @@ class App extends Component {
 		window.addEventListener("resize", this.handleResize);
 		this.handleResize();
 		this.loadData();
+		this.setDisableRightMouse();
+	}
+
+	setDisableRightMouse(){
+		document.addEventListener('contextmenu', e => { 
+			e.preventDefault();
+			return false; 
+		});
+		document.addEventListener('dragstart', e => { 
+			e.preventDefault();
+			return false; 
+		});
+		document.addEventListener('selectstart', e => { 
+			e.preventDefault();
+			return false; 
+		});
 	}
 
 	loadData(){

@@ -51,7 +51,7 @@ class PourWater extends Component {
     this.intervalID = setInterval(() => {
       if (this.state.animDropletCount < props.dropletCount) {
         this.setState({
-          animDropletCount: this.state.animDropletCount + 1
+          animDropletCount: this.state.animDropletCount + 2
         });  
       } else {
         clearInterval(this.intervalID);
