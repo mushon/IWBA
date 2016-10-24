@@ -1,26 +1,23 @@
 # IWBA
 The International Water Bank Association's Water Deposit exhibit - a water ATM for depositing your first drops
 
+## Updating server to heroku
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. (important) recompile javascript
+`rm -rf public/webpack`
+`bundle exec rake webpack:compile`
 
-Things you may want to cover:
+2. push all code into github repository
+`git pull`
+`git add .`
+`git commit -m 'update'`
+`git push`
 
-* Ruby version
+2. heroku login (skip if you already logged in)
 
-* System dependencies
+`heroku login`
+And type your heroku email and password
 
-* Configuration
+4. `git push heroku master`
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
