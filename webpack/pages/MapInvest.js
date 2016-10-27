@@ -11,7 +11,7 @@ class MapInvest extends Component {
   }
 
   componentDidMount(){
-    if (this.props.hotspots.features.length > 0 && _.isUndefined(this.map)){
+    // if (this.props.hotspots.features.length > 0 && _.isUndefined(this.map)){
        this.map = new mapboxgl.Map({
         container: this.refMapContainer,
         style: 'mapbox://styles/mushon/cittuq85x000s2irqfdmd1kdr',
@@ -19,19 +19,18 @@ class MapInvest extends Component {
       });
 
       this.map.on('style.load', this.handleStyleLoad.bind(this));
-    }
+    // }
   }
 
   componentWillReceiveProps(newProps){
-    if (newProps.hotspots.features.length > 0 && _.isUndefined(this.map) ){
-       this.map = new mapboxgl.Map({
-        container: this.refMapContainer,
-        style: 'mapbox://styles/mushon/cittuq85x000s2irqfdmd1kdr',
-        doubleClickZoom: false
-      });
+    // if (newProps.hotspots.features.length > 0 && _.isUndefined(this.map) ){
+      //  this.map = new mapboxgl.Map({
+      //   container: this.refMapContainer,
+      //   style: 'mapbox://styles/mushon/cittuq85x000s2irqfdmd1kdr',
+      //   doubleClickZoom: false
+      // });
 
-      this.map.on('style.load', this.handleStyleLoad.bind(this));
-    }
+    // }
   }
 
   componentDidUpdate(){
