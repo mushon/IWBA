@@ -22,8 +22,9 @@ gem 'will_paginate', '~> 3.1.0'
 gem 'jquery-rails'
 gem "passenger"
 gem "sidekiq"
+gem 'mailcatcher'
+
 gem 'non-stupid-digest-assets'
-gem 'sendgrid-ruby'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
