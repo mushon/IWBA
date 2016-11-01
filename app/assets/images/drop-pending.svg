@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="34px" height="44px" viewBox="0 0 34 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
-    <title>drop:pending</title>
+    <title>drop-pending</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <path d="M23.121874,49.2686055 C30.9211697,49.2686055 37.2437481,42.9460272 37.2437481,35.1467315 C37.3485563,22.7900917 23.121874,12 23.121874,12 C23.121874,12 9.15921776,22.7900917 9,35.1467315 C9,42.9460272 15.3225784,49.2686055 23.121874,49.2686055 Z" id="path-1"></path>
+        <path d="M14.121874,37.2686055 C21.9211697,37.2686055 28.2437481,30.9460272 28.2437481,23.1467315 C28.3485563,10.7900917 14.121874,0 14.121874,0 C14.121874,0 0.159217759,10.7900917 -3.55271368e-14,23.1467315 C-3.55271368e-14,30.9460272 6.32257837,37.2686055 14.121874,37.2686055 Z" id="path-1"></path>
         <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="28.2443243" height="37.2686055" fill="white">
             <use xlink:href="#path-1"></use>
         </mask>
     </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="prompt" transform="translate(-495.000000, -643.000000)" fill="#FFFFFF">
-            <g id="drop:pending" transform="translate(489.000000, 635.000000)">
-                <path d="M23.121874,49.2686055 C30.9211697,49.2686055 37.2437481,42.9460272 37.2437481,35.1467315 C37.3485563,22.7900917 23.121874,12 23.121874,12 C23.121874,12 9.15921776,22.7900917 9,35.1467315 C9,42.9460272 15.3225784,49.2686055 23.121874,49.2686055 Z" id="Oval" stroke="#FFFFFF" stroke-width="5"></path>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="drop-pending" fill="#FFFFFF">
+            <g id="Group-2" transform="translate(11.000000, 6.000000)">
+                <path d="M14.121874,37.2686055 C21.9211697,37.2686055 28.2437481,30.9460272 28.2437481,23.1467315 C28.3485563,10.7900917 14.121874,0 14.121874,0 C14.121874,0 0.159217759,10.7900917 -3.55271368e-14,23.1467315 C-3.55271368e-14,30.9460272 6.32257837,37.2686055 14.121874,37.2686055 Z" id="Oval" stroke="#FFFFFF" stroke-width="5"></path>
                 <use id="Oval" stroke="#0073F8" mask="url(#mask-2)" stroke-width="6" stroke-dasharray="7,3" xlink:href="#path-1"></use>
             </g>
         </g>
