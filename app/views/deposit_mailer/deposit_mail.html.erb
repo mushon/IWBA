@@ -1,32 +1,34 @@
-<h1>Your water is safely deposited and invested</h1>
+<div class="container">
+  <div>
+    <%= image_tag("IWBA_logo.png") %>
+  </div>
 
-<h2>Portfolio</h2>
+  <h2>Congratulations!<br/>
+  Your water portfolio is set.</h2>
 
-<% @deposit.deposit_hotspots.each do |df| %>
- <p>
-  <span style="font-size:40px">
-    <%= df.amount %>
-  </span>drops<br/>
+  <p class="desc">
+    You have <%= @deposit.deposit_hotspots.sum(:amount) %> drops invested in <%= @deposit.deposit_hotspots.count %> water market<%= 's' if @deposit.deposit_hotspots.count > 1 %>.
+  </p>
+  <p class="desc">
+    In the next 24 years the value of your drops are<br/>
+    expected to raise between 35%-135%.
+  </p>
 
-  <%= df.hotspot.name %>
- </p>
-<% end %>
+  <% @deposit.deposit_hotspots.each_with_index do |df, i| %>
+    <h3>
+      <%= (i + 1) %>. <%= df.hotspot.name %>
+    </h3>
+    <div class="map-image-static">
+      <img src="https://api.mapbox.com/styles/v1/mushon/cittuq85x000s2irqfdmd1kdr/static/<%= df.hotspot.lon %>,<%= df.hotspot.lat %>,5.46,0.00,0.00/600x400?access_token=pk.eyJ1IjoibXVzaG9uIiwiYSI6IjY1bHhhTkEifQ.DhW2zcurHHBtmnc2FsMBqg" />
+    </div>
 
-
-<p>
-To verify that this email is from IWBA, confirm your last sign-in date is correct. To access Online or Mobile Banking, go directly to iwba.org or use our Mobile Banking app.
-</p>
-<p>
-Remember: We never ask for private information such as an account number, card PIN, or Social Security or Tax ID number in email messages. If you think an email is suspicious, don't click on any links. Instead, forward it to abuse@iwba.org and delete it.
-</p>
-<p>
-This is a service email from IWBA. Please note that you may receive service emails in accordance with your IWBA service agreements, whether or not you elect to receive promotional email. Please don't reply directly to this automatically generated email message.
-Read our Privacy Notice.
-</p>
-<p>
-IWBA, N.A. Member FDIC. Equal Housing Lender 
-© 2016 IWBA. All rights reserved.
-</p>
-<p>
-This email was sent to: <%= @deposit.email %>
-</p>
+    <p>
+      <% (0..df.amount).each do |i| %>
+        <span>💧</span>
+      <% end %>
+    </p>
+    <p class="drops">
+      <%= number_with_delimiter(df.amount) %> drops invested
+    </p>
+  <% end %>
+</div>
