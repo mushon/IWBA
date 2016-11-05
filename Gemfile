@@ -22,7 +22,7 @@ gem 'will_paginate', '~> 3.1.0'
 gem 'jquery-rails'
 gem "passenger"
 gem "sidekiq"
-gem 'mailcatcher'
+
 gem "sinatra", ">= 2.0.0.beta2", require: false
 
 gem 'non-stupid-digest-assets'
@@ -42,6 +42,8 @@ gem 'countries', '~> 1.2.0', require: 'countries/iso3166'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'mailcatcher'
+
 end
 
 group :development do
