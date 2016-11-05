@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { changeMapMode } from '../actions';
 
 class MapToggleBtn extends Component {
   handleToggleMapMode(e){
@@ -8,17 +9,22 @@ class MapToggleBtn extends Component {
 
   render() {
     return (
-      <a href="javascript:void(0);" onClick={this.handleToggleMapMode.bind(this)}>
-        <div className={`toggle-area__drought-label${ this.props.mapMode == "drought" ? ' active' : ''}`}>
-          Drought Prediction 
-        </div>
-        <div className={`toggle-area__toggle-btn-area${ this.props.mapMode }`}>
-          { this.props.mapMode == 'drought' ? '<--' : '-->' }
-        </div>
-        <div className={`toggle-area__profit-label${ this.props.mapMode == "profits" ? ' active' : ''}`}>
-          Profits Prediction 
-        </div>
-      </a>
+
+      <div className="toggle-area">
+
+        <a href="javascript:void(0);" onClick={this.handleToggleMapMode.bind(this)}>
+          <div className={`toggle-area__drought-label${ this.props.mapMode == "drought" ? ' active' : ''}`}>
+            Drought Prediction 
+          </div>
+          <div className={`toggle-area__toggle-btn-area ${ this.props.mapMode }`}>
+            { this.props.mapMode == 'drought' ? '<--' : '-->' }
+          </div>
+          <div className={`toggle-area__profits-label${ this.props.mapMode == "profits" ? ' active' : ''}`}>
+            Profits Prediction 
+          </div>
+        </a>
+
+      </div>
     );
   }
 }

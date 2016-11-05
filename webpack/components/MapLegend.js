@@ -4,24 +4,24 @@ import { connect } from 'react-redux';
 class MapLegend extends Component {
   render() {
     return (
-      <div class="map-legend">
+      <div className="map-legend">
         <ul>
           <li className="map-legend__label">
             { this.props.mapMode == "drought" ? "Severe" : "Great" }
           </li>
-          <li className={`map-legend__${this.props.mapMode}-level5`}>
+          <li className={`map-legend__legend-bar--${this.props.mapMode}-five`}>
           </li>
 
-          <li className={`map-legend__${this.props.mapMode}-level4`}>
+          <li className={`map-legend__legend-bar--${this.props.mapMode}-four`}>
           </li>
 
-          <li className={`map-legend__${this.props.mapMode}-level3`}>
+          <li className={`map-legend__legend-bar--${this.props.mapMode}-three`}>
           </li>
 
-          <li className={`map-legend__${this.props.mapMode}-level2`}>
+          <li className={`map-legend__legend-bar--${this.props.mapMode}-two`}>
           </li>
 
-          <li className={`map-legend__${this.props.mapMode}-level1`}>
+          <li className={`map-legend__legend-bar--${this.props.mapMode}-one`}>
           </li>
 
           <li className="map-legend__label">
