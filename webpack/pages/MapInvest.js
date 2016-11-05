@@ -83,23 +83,19 @@ class MapInvest extends Component {
 
     this.map.addLayer({
       "id": "points",
-      "type": "circle",
+      "type": "symbol",
       "source": "points",
-      "paint": {
-        "circle-radius": 30,
-        "circle-color": "#0053f9",
-        "circle-opacity": 0.5
+      "layout": {
+        "icon-image": "marker-invested"
       }
     });
 
     this.map.addLayer({
       "id": "points-down",
-      "type": "circle",
+      "type": "symbol",
       "source": "points",
-      "paint": {
-        "circle-radius": 30,
-        "circle-color": "#FF0000",
-        "circle-opacity": 0.5
+      "layout": {
+        "icon-image": "marker-scale"
       },
       "filter": ["==", "name", ""]
     });
