@@ -65,10 +65,10 @@ var defaultReducer = (state = initialState, action) => {
 
       var deposit = _.find(newState.deposits, deposit => { return deposit.name == action.payload.name });
       if (_.isUndefined(deposit)) {
-        deposit = { name: action.payload.name, amount: 5 };
+        deposit = { name: action.payload.name, amount: action.payload.increasedAmount };
         newState.deposits.push(deposit);
       } else {
-        deposit.amount = deposit.amount + 5;
+        deposit.amount = deposit.amount + action.payload.increasedAmount;
       }
       return newState;
     case 'ADD_TOTAL_DROPS':

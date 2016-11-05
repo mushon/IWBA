@@ -17,11 +17,12 @@ export const initHotspots = (hotspots) => {
   }
 };
 
-export const updateDeposits = (name) => {
+export const updateDeposits = (name, increasedAmount) => {
   return {
     type: "UPDATE_DEPOSITS",
     payload: {
-      name: name
+      name: name,
+      increasedAmount: increasedAmount
     }
   }
 }
