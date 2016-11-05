@@ -10,7 +10,7 @@
         <g id="marker-scale">
             <g id="Group-2" transform="translate(3.000000, 3.000000)">
                 <g id="Oval-2">
-                    <use stroke="#FFFFFF" stroke-width="3" fill-opacity="0.1" fill="#0073F8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use stroke="#FFFFFF" stroke-width="3" fill-opacity="0.3" fill="#0073F8" fill-rule="evenodd" xlink:href="#path-1"></use>
                     <use stroke="#0073F8" stroke-width="1" xlink:href="#path-1"></use>
                 </g>
             </g>
