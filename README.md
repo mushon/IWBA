@@ -20,4 +20,15 @@ And type your heroku email and password
 
 4. `git push heroku master`
 
+## Render email on local
+In order to test email on local, we need to open two more tabs in terminal. After pulling latest code, open a terminal tab and type in terminal 
+
+`mailcatcher`
+
+And open another tab and type in terminal
+
+`bundle exec sidekiq -q default -q mailers`
+
+and after you've done the test, the mail can be checked in `http://127.0.0.1:1080`
+
 

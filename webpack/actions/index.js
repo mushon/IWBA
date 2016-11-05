@@ -68,3 +68,12 @@ export const changeMapMode = (mode) => {
     }
   }
 }
+
+export const changePourAnim = (pourAnim) => {
+  return {
+    type: "CHANGE_POUR_ANIM",
+    payload: {
+      pourAnim: pourAnim
+    }
+  }
+}
