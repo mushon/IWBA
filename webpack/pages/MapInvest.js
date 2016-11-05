@@ -15,9 +15,12 @@ class MapInvest extends Component {
        this.map = new mapboxgl.Map({
         container: this.refMapContainer,
         style: 'mapbox://styles/mushon/cittuq85x000s2irqfdmd1kdr',
-        doubleClickZoom: false
+        doubleClickZoom: false,
+        zoom: 1.7,
+        center: [63, 31]
       });
 
+      window.map = this.map;
       this.map.on('style.load', this.handleStyleLoad.bind(this));
     // }
   }
