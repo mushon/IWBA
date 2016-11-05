@@ -2,6 +2,10 @@ import _ from 'lodash';
 import { scaleQuantize } from 'd3';
 
 let initialState = {
+  sessionResetter: {
+    startedToPopupSeconds: 0,
+    afterPopupResetSessionSeconds: 0
+  },
   screenWidth: 1024,
   screenHeight: 768,
   droplets: [],
@@ -90,6 +94,11 @@ var defaultReducer = (state = initialState, action) => {
       return {
         ...state,
         pourAnim: action.payload.pourAnim
+      }
+    case 'CHANGE_SESSION_RESETTER':
+      return {
+        ...state,
+        sessionResetter: action.payload.sessionResetter
       }
     default:
       return state;

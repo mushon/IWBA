@@ -78,3 +78,12 @@ export const changePourAnim = (pourAnim) => {
     }
   }
 }
+
+export const changeSessionResetter = (sessionResetter) => {
+  return {
+    type: 'CHANGE_SESSION_RESETTER',
+    payload: {
+      sessionResetter: sessionResetter
+    }
+  }
+}

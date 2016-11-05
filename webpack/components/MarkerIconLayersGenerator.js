@@ -13,7 +13,7 @@ class MarkerIconLayersGenerator {
     this.scale = scaleLinear()
       .domain(this.extent)
       .clamp(true)
-      .range([1, 3.5]);
+      .range([1, 3]);
     // debugger;
     var increment = (this.extent[this.extent.length - 1] - this.extent[0]) / this.increment_count;
     var idx = 0;

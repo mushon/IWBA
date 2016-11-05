@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link, hashHistory } from 'react-router';
 import _ from 'lodash';
-import { Header, MapLegend, MapToggleBtn, PourAnim } from '../components';
+import { Header, MapLegend, MapToggleBtn, PourAnim, SessionResetter } from '../components';
 import { connect } from 'react-redux';
 import { updateDeposits, changePourAnim } from '../actions';
 import MarkerIconLayersGenerator from '../components/MarkerIconLayersGenerator';
@@ -12,7 +12,7 @@ class MapInvest extends Component {
 
     this.scaleLayers = [];
     this.easingAmount = 1;
-
+    this.triggerNextPage = false;
   }
 
   componentDidMount(){
@@ -55,7 +55,21 @@ class MapInvest extends Component {
       this.map.getSource("points").setData(newProps.hotspotsInvested);  
     }
     
+    if (newProps.remainDroplets <= 0 && !this.triggerNextPage) {
+
+      this.triggerNextPage = true;
+      _.delay(() => {
+        hashHistory.push("/5-sending-email");
+      }, 2000);
+    }
+
   
+  }
+
+  componentWillUnmount(){
+
+    this.triggerNextPage = false;
+
   }
 
   changeMapMode(props){
@@ -215,12 +229,13 @@ class MapInvest extends Component {
           this.props.pourAnim.show ? 
           <PourAnim /> : null
         }
-        <div className="container"  onClick={this.handleContainerClick.bind(this)} ref={ c => { this.refMapContainer = c; }} style={{ width: this.props.screenWidth - 50, height: this.props.screenHeight - 230 }}>
+        <div className="container" ref={ c => { this.refMapContainer = c; }} style={{ width: this.props.screenWidth - 50, height: this.props.screenHeight - 230 }}>
 
         </div>
         <MapToggleBtn />
       
         <MapLegend />
+        <SessionResetter />  
       </section>
 
 
@@ -255,7 +270,8 @@ let mapStateToProps = state => {
     deposits: state.deposits,
     remainDroplets: remainDroplets,
     mapMode: state.mapMode,
-    hotspotsInvested: hotspotsInvested
+    hotspotsInvested: hotspotsInvested,
+    sessionResetter: state.sessionResetter
   }
 };
 
