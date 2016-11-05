@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link, hashHistory } from 'react-router';
 import _ from 'lodash';
-import { Header } from '../components';
+import { Header, MapLegend, MapToggleBtn } from '../components';
 import { connect } from 'react-redux';
 import { updateDeposits } from '../actions';
 
@@ -113,8 +113,8 @@ class MapInvest extends Component {
     if (this.props.remainDroplets == 0) {
       hashHistory.push("/5-sending-email");
     }
-
   }
+
 
   render() {
 
@@ -140,8 +140,18 @@ class MapInvest extends Component {
         }
         </header>
 
-        <div className="container" ref={ c => { this.refMapContainer = c; }} style={{ width: this.props.screenWidth - 50, height: this.props.screenHeight - 168 }}>
+        <div className="container" ref={ c => { this.refMapContainer = c; }} style={{ width: this.props.screenWidth - 50, height: this.props.screenHeight - 300 }}>
 
+        </div>
+
+        <div className="toggle-area">
+          <div className="fl">
+            <MapToggleBtn />
+          </div>
+          <div className="fr">
+            <MapLegend />
+          </div>
+          <br className="clearing" />
         </div>
       </section>
 
@@ -160,7 +170,8 @@ let mapStateToProps = state => {
     screenHeight: state.screenHeight,
     hotspots: state.hotspots,
     deposits: state.deposits,
-    remainDroplets: remainDroplets
+    remainDroplets: remainDroplets,
+    mapMode: state.mapMode
   }
 };
 

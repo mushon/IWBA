@@ -13,7 +13,8 @@ let initialState = {
   authToken: '',
   deposits: [],
   investorEmail: '',
-  dropClassScale: scaleQuantize().domain([0, 1500]).range([" scale1", " scale2", " scale3", " scale4", " scale5", " scale6", " scale7", " scale8", " scale9"])
+  dropClassScale: scaleQuantize().domain([0, 1500]).range([" scale1", " scale2", " scale3", " scale4", " scale5", " scale6", " scale7", " scale8", " scale9"]),
+  mapMode: "drought" // drought / profits
 };
 
 var defaultReducer = (state = initialState, action) => {
@@ -27,6 +28,11 @@ var defaultReducer = (state = initialState, action) => {
         dropletCount: 0,
         deposits: [],
         investorEmail: ''
+      }
+    case 'CHANGE_MAP_MODE':
+      return {
+        ...state,
+        mapMode: action.payload.mapMode
       }
     case 'WINDOW_RESIZE':
       return {
@@ -54,10 +60,10 @@ var defaultReducer = (state = initialState, action) => {
 
       var deposit = _.find(newState.deposits, deposit => { return deposit.name == action.payload.name });
       if (_.isUndefined(deposit)) {
-        deposit = { name: action.payload.name, amount: 1 };
+        deposit = { name: action.payload.name, amount: 5 };
         newState.deposits.push(deposit);
       } else {
-        deposit.amount = deposit.amount + 1;
+        deposit.amount = deposit.amount + 5;
       }
       return newState;
     case 'ADD_TOTAL_DROPS':

@@ -59,3 +59,12 @@ export const commitReset = () => {
     payload: {}
   }
 }
+
+export const changeMapMode = (mode) => {
+  return {
+    type: "CHANGE_MAP_MODE",
+    payload: {
+      mapMode: mode
+    }
+  }
+}
