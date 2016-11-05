@@ -296,7 +296,32 @@ br.clearing {
     float:left;
     font-size:0.5em;
     margin: 0 10px;
-  line-height: 1;
+    line-height: 1;
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -99999px;
+    border: 1px solid $text;
+    width: 38px;
+    height: 20px;
+    border-radius: 12px;
+    position: relative;
+
+    &::after{
+      content: "";
+      height: 16px;
+      width: 16px;
+      background: $text;
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      border-radius: 8px;
+      transition: left 0.5s ease;
+    }
+
+    &.profits::after {
+      left: 20px;
+    }
   }
 
   &__drought-label {
@@ -321,7 +346,6 @@ br.clearing {
     &.active {
       color:$text;
     }
-
   }
 }
 
@@ -339,7 +363,7 @@ br.clearing {
     margin:0;
     padding:0;
     list-style:none;
-    
+
   }
   li {
     float:left;
@@ -361,52 +385,52 @@ br.clearing {
   }
 
   &__legend-bar--drought-one {
-    @extend .map-legend__legend-bar; 
+    @extend .map-legend__legend-bar;
     background-color:#ffe185;
   }
 
   &__legend-bar--drought-two {
-    @extend .map-legend__legend-bar; 
+    @extend .map-legend__legend-bar;
     background-color:#ffa300;
   }
 
   &__legend-bar--drought-three {
-    @extend .map-legend__legend-bar; 
+    @extend .map-legend__legend-bar;
     background-color:#f66c3b;
   }
 
   &__legend-bar--drought-four {
-    @extend .map-legend__legend-bar; 
+    @extend .map-legend__legend-bar;
     background-color:#da2e1d;
   }
 
   &__legend-bar--drought-five {
-    @extend .map-legend__legend-bar; 
+    @extend .map-legend__legend-bar;
     background-color:#a71622;
   }
 
   &__legend-bar--profits-one {
-    @extend .map-legend__legend-bar; 
+    @extend .map-legend__legend-bar;
     background-color:#dff19d;
   }
 
   &__legend-bar--profits-two {
-    @extend .map-legend__legend-bar; 
+    @extend .map-legend__legend-bar;
     background-color:#b8df84;
   }
 
   &__legend-bar--profits-three {
-    @extend .map-legend__legend-bar; 
+    @extend .map-legend__legend-bar;
     background-color:#85cb80;
   }
 
   &__legend-bar--profits-four {
-    @extend .map-legend__legend-bar; 
+    @extend .map-legend__legend-bar;
     background-color:#4cae73;
   }
 
   &__legend-bar--profits-five {
-    @extend .map-legend__legend-bar; 
+    @extend .map-legend__legend-bar;
     background-color:#378a60;
   }
 
