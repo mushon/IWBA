@@ -10,19 +10,13 @@ Rails.application.configure do
   config.eager_load = false
 
   # Show full error reports.
-  config.consider_all_requests_local = true
-  config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+ 
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    :user_name => '7f1f8be86f8bcf',
-    :password => 'a8a72e4148ae09',
-    :address => 'mailtrap.io',
-    :domain => 'mailtrap.io',
-    :port => '2525',
-    :authentication => :cram_md5
-  }
-  
+  config.action_mailer.smtp_settings = {:address => "localhost", :port => 1025}
+  config.action_controller.asset_host = 'localhost:3000'
+  config.action_mailer.asset_host = 'http://localhost:3000'
+
   # Enable/disable caching. By default caching is disabled.
   if Rails.root.join('tmp/caching-dev.txt').exist?
     config.action_controller.perform_caching = true

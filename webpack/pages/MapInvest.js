@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link, hashHistory } from 'react-router';
 import _ from 'lodash';
-import { Header } from '../components';
+import { Header, MapLegend, MapToggleBtn } from '../components';
 import { connect } from 'react-redux';
 import { updateDeposits } from '../actions';
 
@@ -31,6 +31,37 @@ class MapInvest extends Component {
       // });
 
     // }
+
+    if (newProps.mapMode != this.props.mapMode) {
+
+      this.changeMapMode(newProps);  
+    }
+  }
+
+  changeMapMode(props){
+    var layerNames = _.keys(this.map.style._layers);
+    var droughtLayerNames = _.filter(layerNames, layerName => { return layerName.indexOf("drought") > -1; });
+    var profitLayerNames = _.filter(layerNames, layerName => { return layerName.indexOf("profit") > -1; });
+
+
+    if (props.mapMode === 'drought') {
+      _.each(droughtLayerNames, droughtLayerName => {
+        this.map.setLayoutProperty(droughtLayerName, 'visibility', 'visible');        
+      });
+
+      _.each(profitLayerNames, profitLayerName => {
+        this.map.setLayoutProperty(profitLayerName, 'visibility', 'none');        
+      });
+    } else {
+      _.each(droughtLayerNames, droughtLayerName => {
+        this.map.setLayoutProperty(droughtLayerName, 'visibility', 'none');        
+      });
+
+      _.each(profitLayerNames, profitLayerName => {
+        this.map.setLayoutProperty(profitLayerName, 'visibility', 'visible');        
+      });
+
+    }
   }
 
   componentDidUpdate(){
@@ -113,15 +144,15 @@ class MapInvest extends Component {
     if (this.props.remainDroplets == 0) {
       hashHistory.push("/5-sending-email");
     }
-
   }
+
 
   render() {
 
     return (
 
-      <section className="congratulation" onClick={this.handleContainerClick.bind(this)}>
-        <header>
+      <section className="congratulation">
+        <header onClick={this.handleContainerClick.bind(this)} >
         {
           (this.props.dropletCount == this.props.remainDroplets && this.props.dropletCount != 0) ?
           <div>
@@ -140,9 +171,12 @@ class MapInvest extends Component {
         }
         </header>
 
-        <div className="container" ref={ c => { this.refMapContainer = c; }} style={{ width: this.props.screenWidth - 50, height: this.props.screenHeight - 168 }}>
+        <div className="container"  onClick={this.handleContainerClick.bind(this)} ref={ c => { this.refMapContainer = c; }} style={{ width: this.props.screenWidth - 50, height: this.props.screenHeight - 230 }}>
 
         </div>
+        <MapToggleBtn />
+      
+        <MapLegend />
       </section>
 
 
@@ -160,7 +194,8 @@ let mapStateToProps = state => {
     screenHeight: state.screenHeight,
     hotspots: state.hotspots,
     deposits: state.deposits,
-    remainDroplets: remainDroplets
+    remainDroplets: remainDroplets,
+    mapMode: state.mapMode
   }
 };
 
