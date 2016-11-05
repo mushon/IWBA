@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link, hashHistory } from 'react-router';
 import _ from 'lodash';
-import { Header, MapLegend, MapToggleBtn } from '../components';
+import { Header, MapLegend, MapToggleBtn, PourAnim } from '../components';
 import { connect } from 'react-redux';
-import { updateDeposits } from '../actions';
+import { updateDeposits, changePourAnim } from '../actions';
 
 class MapInvest extends Component {
   constructor(props){
@@ -116,18 +116,24 @@ class MapInvest extends Component {
   }
 
   handleMouseDown(e){
-    var features = this.map.queryRenderedFeatures(e.point, { layers: ["points"] });
-    if (features.length) {
 
-      this.map.setFilter("points-down", ["==", "name", features[0].properties.name]);
+    if (this.props.remainDroplets > 0) {
+      var features = this.map.queryRenderedFeatures(e.point, { layers: ["points"] });
+      if (features.length) {
+
+        this.map.setFilter("points-down", ["==", "name", features[0].properties.name]);
 
 
-      clearInterval(this.downTimer);
-      this.downTimer = setInterval(() =>{
-        this.props.dispatch(updateDeposits(features[0].properties.name));
-      }, 60);
-    } else {
-      this.map.setFilter("points-down", ["==", "name", ""]);
+        clearInterval(this.downTimer);
+        this.downTimer = setInterval(() =>{
+
+          this.props.dispatch(changePourAnim({ show: true, pointSize: 30, pos: this.map.project(features[0].geometry.coordinates) }));
+          this.props.dispatch(updateDeposits(features[0].properties.name));
+        }, 60);
+      } else {
+        this.map.setFilter("points-down", ["==", "name", ""]);
+      }
+
     }
 
 
@@ -137,6 +143,7 @@ class MapInvest extends Component {
   handleMouseUp(e){
 
     clearInterval(this.downTimer);
+    this.props.dispatch(changePourAnim({ show: false }));
     this.map.setFilter("points-down", ["==", "name", ""]);
   }
 
@@ -170,7 +177,10 @@ class MapInvest extends Component {
           </div>
         }
         </header>
-
+        {
+          this.props.pourAnim.show ? 
+          <PourAnim /> : null
+        }
         <div className="container"  onClick={this.handleContainerClick.bind(this)} ref={ c => { this.refMapContainer = c; }} style={{ width: this.props.screenWidth - 50, height: this.props.screenHeight - 230 }}>
 
         </div>
@@ -189,6 +199,7 @@ let mapStateToProps = state => {
   let remainDroplets = Math.max(state.dropletCount - _.sumBy(state.deposits, deposit => { return deposit.amount }), 0);
 
   return {
+    pourAnim: state.pourAnim,
     dropletCount: state.dropletCount,
     screenWidth: state.screenWidth,
     screenHeight: state.screenHeight,

@@ -14,6 +14,11 @@ let initialState = {
   deposits: [],
   investorEmail: '',
   dropClassScale: scaleQuantize().domain([0, 1500]).range([" scale1", " scale2", " scale3", " scale4", " scale5", " scale6", " scale7", " scale8", " scale9"]),
+  pourAnim: {
+    show: false,
+    pos: null,
+    pointSize: 30
+  },
   mapMode: "drought" // drought / profits
 };
 
@@ -81,6 +86,11 @@ var defaultReducer = (state = initialState, action) => {
       newState.dropletCount = _.sumBy(newState.droplets, droplet => { return droplet.amount; });
 
       return newState;
+    case 'CHANGE_POUR_ANIM':
+      return {
+        ...state,
+        pourAnim: action.payload.pourAnim
+      }
     default:
       return state;
   }
