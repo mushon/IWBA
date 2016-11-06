@@ -8,8 +8,8 @@ class SessionResetter extends Component {
   constructor(props){
     super(props);
 
-    this.popLimit = 20000;
-    this.resetLimit = 5000;
+    this.popLimit = 30000;
+    this.resetLimit = 10000;
     this.resetTime = this.resetTime.bind(this);
 
     this.startedPopupInterval = null;

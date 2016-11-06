@@ -57,8 +57,8 @@ class PourWater extends Component {
           afterPopupResetSessionSeconds: 0
         }));
         this.setState({
-          animDropletCount: this.state.animDropletCount + 2
-        });  
+          animDropletCount: this.state.animDropletCount + 4
+        });
 
       } else {
         clearInterval(this.intervalID);

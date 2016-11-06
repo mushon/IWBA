@@ -3,12 +3,7 @@
     <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
     <title>drop</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <rect id="path-1" x="0" y="0" width="50" height="50"></rect>
-        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="50" height="50" fill="white">
-            <use xlink:href="#path-1"></use>
-        </mask>
-    </defs>
+    <defs></defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="drop">
             <g transform="translate(10.000000, 6.000000)" id="Group-2">
@@ -17,7 +12,7 @@
                     <path d="M9.09741902,16.48614 C10.9904457,13.5711345 12.3241429,11.2639437 11.6146355,10.8031842 C10.9051281,10.3424247 9.40807792,12.3319842 7.5150512,15.2469897 C5.62202449,18.1619952 4.87360798,21.249501 5.58311537,21.7102605 C6.29262276,22.17102 7.20439231,19.4011455 9.09741902,16.48614 Z" id="Oval-2" fill="#FFFFFF"></path>
                 </g>
             </g>
-            <use id="Rectangle" stroke="#F3F5F8" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+            <rect id="Rectangle" x="0" y="0" width="50" height="50"></rect>
         </g>
     </g>
 </svg>
