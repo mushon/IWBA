@@ -11,11 +11,22 @@ Rails.application.configure do
 
   # Show full error reports.
  
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {:address => "localhost", :port => 1025}
-  config.action_controller.asset_host = 'localhost:3000'
-  config.action_mailer.asset_host = 'http://localhost:3000'
+  config.action_mailer.smtp_settings = {
+    :user_name => 'd634630422e11f',
+    :password => 'c36559089aeac4',
+    :address => 'mailtrap.io',
+    :domain => 'mailtrap.io',
+    :port => '2525',
+    :authentication => :cram_md5
+  }
+
+  Rails.application.routes.default_url_options[:host] = 'localhost'
+  Rails.application.routes.default_url_options[:port] = 3000
+  Rails.application.routes.default_url_options[:protocol] = 'http'
+  config.action_mailer.asset_host = "http://localhost:3000"
+
 
   # Enable/disable caching. By default caching is disabled.
   if Rails.root.join('tmp/caching-dev.txt').exist?

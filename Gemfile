@@ -42,8 +42,6 @@ gem 'countries', '~> 1.2.0', require: 'countries/iso3166'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
-  gem 'mailcatcher'
-
 end
 
 group :development do

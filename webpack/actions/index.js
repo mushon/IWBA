@@ -17,11 +17,12 @@ export const initHotspots = (hotspots) => {
   }
 };
 
-export const updateDeposits = (name) => {
+export const updateDeposits = (name, increasedAmount) => {
   return {
     type: "UPDATE_DEPOSITS",
     payload: {
-      name: name
+      name: name,
+      increasedAmount: increasedAmount
     }
   }
 }
@@ -74,6 +75,15 @@ export const changePourAnim = (pourAnim) => {
     type: "CHANGE_POUR_ANIM",
     payload: {
       pourAnim: pourAnim
+    }
+  }
+}
+
+export const changeSessionResetter = (sessionResetter) => {
+  return {
+    type: 'CHANGE_SESSION_RESETTER',
+    payload: {
+      sessionResetter: sessionResetter
     }
   }
 }

@@ -7,6 +7,24 @@ import { connect } from 'react-redux';
 class Congratulation extends Component {
   constructor(props){
     super(props);
+    this.triggerNextPage = false;
+    
+  }
+
+  componentDidMount(){
+
+    if (!this.triggerNextPage) {
+      this.triggerNextPage = true;
+      _.delay(() => {
+        hashHistory.push("/4-map-invest");
+      }, 2000);
+      
+    }
+  
+  }
+
+  componentWillUnmount(){
+    this.triggerNextPage = false;
   }
 
   onClick(e){

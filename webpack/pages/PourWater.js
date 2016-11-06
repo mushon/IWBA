@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import _ from 'lodash';
-import { Header } from '../components';
+import { Header, SessionResetter } from '../components';
 import { connect } from 'react-redux';
-import { addTotalDrops } from '../actions';
+import { addTotalDrops, changeSessionResetter } from '../actions';
 import axios from 'axios';
 import moment from 'moment';
 
@@ -47,15 +47,21 @@ class PourWater extends Component {
 
 
   setAnim(props){
+
+
     this.intervalID = clearInterval(this.intervalID);
     this.intervalID = setInterval(() => {
       if (this.state.animDropletCount < props.dropletCount) {
+        this.props.dispatch(changeSessionResetter({
+          startedToPopupSeconds: 0,
+          afterPopupResetSessionSeconds: 0
+        }));
         this.setState({
-          animDropletCount: this.state.animDropletCount + 2
-        });  
+          animDropletCount: this.state.animDropletCount + 4
+        });
+
       } else {
         clearInterval(this.intervalID);
-        console.log("cleared");
       }
     }, 1);
   }
@@ -83,7 +89,7 @@ class PourWater extends Component {
             : null
           }
         </div>
-
+        <SessionResetter />
       </section>
 
 

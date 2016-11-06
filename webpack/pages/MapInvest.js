@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import { Link, hashHistory } from 'react-router';
 import _ from 'lodash';
-import { Header, MapLegend, MapToggleBtn, PourAnim } from '../components';
+import { Header, MapLegend, MapToggleBtn, PourAnim, SessionResetter } from '../components';
 import { connect } from 'react-redux';
 import { updateDeposits, changePourAnim } from '../actions';
+import MarkerIconLayersGenerator from '../components/MarkerIconLayersGenerator';
 
 class MapInvest extends Component {
   constructor(props){
     super(props);
+
+    this.scaleLayers = [];
+    this.easingAmount = 1;
+    this.triggerNextPage = false;
   }
 
   componentDidMount(){
@@ -21,6 +26,11 @@ class MapInvest extends Component {
       });
 
       window.map = this.map;
+
+
+      this.map.dragRotate.disable();
+      this.map.touchZoomRotate.disableRotation();
+      this.layerGenerator = new MarkerIconLayersGenerator(this.props.dropletCount);
       this.map.on('style.load', this.handleStyleLoad.bind(this));
     // }
   }
@@ -36,9 +46,30 @@ class MapInvest extends Component {
     // }
 
     if (newProps.mapMode != this.props.mapMode) {
-
-      this.changeMapMode(newProps);  
+      this.changeMapMode(newProps);
     }
+
+
+    if (!_.isUndefined(this.map.getSource("points-invested"))){
+      this.map.getSource("points-invested").setData(newProps.hotspotsInvested);
+      this.map.getSource("points").setData(newProps.hotspotsInvested);
+    }
+
+    if (newProps.remainDroplets <= 0 && !this.triggerNextPage) {
+
+      this.triggerNextPage = true;
+      _.delay(() => {
+        hashHistory.push("/5-sending-email");
+      }, 2000);
+    }
+
+
+  }
+
+  componentWillUnmount(){
+
+    this.triggerNextPage = false;
+
   }
 
   changeMapMode(props){
@@ -49,19 +80,19 @@ class MapInvest extends Component {
 
     if (props.mapMode === 'drought') {
       _.each(droughtLayerNames, droughtLayerName => {
-        this.map.setLayoutProperty(droughtLayerName, 'visibility', 'visible');        
+        this.map.setLayoutProperty(droughtLayerName, 'visibility', 'visible');
       });
 
       _.each(profitLayerNames, profitLayerName => {
-        this.map.setLayoutProperty(profitLayerName, 'visibility', 'none');        
+        this.map.setLayoutProperty(profitLayerName, 'visibility', 'none');
       });
     } else {
       _.each(droughtLayerNames, droughtLayerName => {
-        this.map.setLayoutProperty(droughtLayerName, 'visibility', 'none');        
+        this.map.setLayoutProperty(droughtLayerName, 'visibility', 'none');
       });
 
       _.each(profitLayerNames, profitLayerName => {
-        this.map.setLayoutProperty(profitLayerName, 'visibility', 'visible');        
+        this.map.setLayoutProperty(profitLayerName, 'visibility', 'visible');
       });
 
     }
@@ -76,33 +107,46 @@ class MapInvest extends Component {
   handleStyleLoad(e){
     this.map.addSource("points", {
       "type": "geojson",
-      "data": this.props.hotspots
+      "data": this.props.hotspotsInvested
+    });
+
+    this.map.addSource("points-invested", {
+      "type": "geojson",
+      "data": this.props.hotspotsInvested
     });
 
 
+    this.scaleLayers = this.layerGenerator.getLayers();
+
+    _.each(this.scaleLayers, layer => {
+      this.map.addLayer(layer);
+    });
 
     this.map.addLayer({
       "id": "points",
-      "type": "circle",
+      "type": "symbol",
       "source": "points",
-      "paint": {
-        "circle-radius": 30,
-        "circle-color": "#0053f9",
-        "circle-opacity": 0.5
-      }
+      "layout": {
+        "icon-image": "marker"
+      },
+      "filter": ["any",
+        ["!has", "investedDrops"],
+        ["==", "investedDrops", 0]
+      ]
     });
 
     this.map.addLayer({
       "id": "points-down",
-      "type": "circle",
       "source": "points",
-      "paint": {
-        "circle-radius": 30,
-        "circle-color": "#FF0000",
-        "circle-opacity": 0.5
+      "type": "symbol",
+       "layout": {
+        "icon-image": "marker-invested"
       },
-      "filter": ["==", "name", ""]
+      "filter": [">", "investedDrops", 0]
     });
+
+
+
 
     this.map.on("mousedown", this.handleMouseDown.bind(this));
     this.map.on("mouseup", this.handleMouseUp.bind(this));
@@ -114,27 +158,28 @@ class MapInvest extends Component {
 
   handleMouseMove(e){
 
-    var features = this.map.queryRenderedFeatures(e.point, { layers: ["points"] });
+    var features = this.map.queryRenderedFeatures(e.point, { layers: ["points", "points-down"].concat(this.layerGenerator.layerNames) });
     this.map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
   }
 
   handleMouseDown(e){
 
     if (this.props.remainDroplets > 0) {
-      var features = this.map.queryRenderedFeatures(e.point, { layers: ["points"] });
+      var features = this.map.queryRenderedFeatures(e.point, { layers: ["points", "points-down"].concat(this.layerGenerator.layerNames)  });
       if (features.length) {
 
-        this.map.setFilter("points-down", ["==", "name", features[0].properties.name]);
+        // this.map.setFilter("points-down", ["==", "name", features[0].properties.name]);
 
 
         clearInterval(this.downTimer);
         this.downTimer = setInterval(() =>{
 
           this.props.dispatch(changePourAnim({ show: true, pointSize: 30, pos: this.map.project(features[0].geometry.coordinates) }));
-          this.props.dispatch(updateDeposits(features[0].properties.name));
+          this.props.dispatch(updateDeposits(features[0].properties.name, this.easingAmount));
+          this.easingAmount++;
         }, 60);
       } else {
-        this.map.setFilter("points-down", ["==", "name", ""]);
+        // this.map.setFilter("points-down", ["==", "name", ""]);
       }
 
     }
@@ -144,10 +189,10 @@ class MapInvest extends Component {
   }
 
   handleMouseUp(e){
+    this.easingAmount = 1;
 
     clearInterval(this.downTimer);
     this.props.dispatch(changePourAnim({ show: false }));
-    this.map.setFilter("points-down", ["==", "name", ""]);
   }
 
   handleContainerClick(e){
@@ -180,16 +225,17 @@ class MapInvest extends Component {
           </div>
         }
         </header>
+        <div className="container" ref={ c => { this.refMapContainer = c; }} style={{ width: this.props.screenWidth - 50, height: this.props.screenHeight - 230 }}>
         {
-          this.props.pourAnim.show ? 
+          this.props.pourAnim.show ?
           <PourAnim /> : null
         }
-        <div className="container"  onClick={this.handleContainerClick.bind(this)} ref={ c => { this.refMapContainer = c; }} style={{ width: this.props.screenWidth - 50, height: this.props.screenHeight - 230 }}>
 
         </div>
         <MapToggleBtn />
-      
+
         <MapLegend />
+        <SessionResetter />
       </section>
 
 
@@ -201,6 +247,20 @@ let mapStateToProps = state => {
 
   let remainDroplets = Math.max(state.dropletCount - _.sumBy(state.deposits, deposit => { return deposit.amount }), 0);
 
+  let hotspotsInvested = { ...state.hotspots };
+  _.each(state.deposits, (deposit, i) => {
+    var hotspotIdx = _.findIndex(hotspotsInvested.features, hotspot => { return hotspot.properties.name == deposit.name });
+
+    hotspotsInvested.features[hotspotIdx].properties.investedDrops = deposit.amount;
+
+  }); // deposit = { name: action.payload.name, amount: 5 };
+
+  _.each(hotspotsInvested.features, (hotspot, i) => {
+    if (_.isUndefined(hotspot.properties.investedDrops)) {
+      hotspotsInvested.features[i].properties.investedDrops = 0;
+    }
+  });
+
   return {
     pourAnim: state.pourAnim,
     dropletCount: state.dropletCount,
@@ -209,7 +269,9 @@ let mapStateToProps = state => {
     hotspots: state.hotspots,
     deposits: state.deposits,
     remainDroplets: remainDroplets,
-    mapMode: state.mapMode
+    mapMode: state.mapMode,
+    hotspotsInvested: hotspotsInvested,
+    sessionResetter: state.sessionResetter
   }
 };
 
