@@ -96,7 +96,7 @@ br.clearing {
   width: 100%;
   min-height: 520px;
   position: absolute;
-  bottom: 80px;
+  bottom: 60px;
   margin:0;
   padding:0;
   li {
@@ -486,7 +486,7 @@ br.clearing {
   background-color: rgba(89, 105, 126, 0.9);
   width:100%;
   height:100%;
-  z-index:99999;
+  z-index:9999999;
   left: 0;
   top: 0;
 
@@ -494,7 +494,7 @@ br.clearing {
     position:absolute;
     left:50%;
     top:50%;
-    z-index:100000;
+    z-index:99999999;
     @include absolute_center_middle;
     color:white;
     text-align: center;
@@ -511,7 +511,7 @@ br.clearing {
   background: url('/assets/dripping_tile.png') repeat-y;
   background-size: 100%;
   animation: dripLine 0.5s linear infinite;
-  margin: -463px 0 0 -28px; //                    <---- ugly hack, but it works…
+  margin:-325px 0 0 -3px; //                    <---- ugly hack, but it works…
   img {
     opacity: 0;
   }
