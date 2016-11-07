@@ -515,7 +515,7 @@ br.clearing {
   background: url('/assets/dripping_tile.png') repeat-y;
   background-size: 100%;
   animation: dripLine 0.5s linear infinite;
-  margin:-325px 0 0 -3px; //                    <---- ugly hack, but it works…
+  margin:-463px 0 0 -28px; //                    <---- ugly hack, but it works…
   img {
     opacity: 0;
   }
