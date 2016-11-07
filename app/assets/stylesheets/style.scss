@@ -260,9 +260,10 @@ br.clearing {
   .mapboxgl-map{
     top: 145px;
     position: absolute;
-    width: 974px;
-    height: 518px;
-
+    canvas{
+      width: 974px;
+      height: 518px;
+    }
     .mapboxgl-ctrl-attrib a {
       color: rgba(0,0,0,0.5);
       font-size: 10px;
@@ -514,7 +515,7 @@ br.clearing {
   background: url('/assets/dripping_tile.png') repeat-y;
   background-size: 100%;
   animation: dripLine 0.5s linear infinite;
-  margin:-325px 0 0 -3px; //                    <---- ugly hack, but it works…
+  margin:-463px 0 0 -28px; //                    <---- ugly hack, but it works…
   img {
     opacity: 0;
   }
