@@ -49,7 +49,7 @@ body, div, p, input {
 }
 
 header {
-  margin: 30px 58px 10px;
+  padding: 30px 58px 10px;
   // margin-top: 10px; //fix for status bar height on Kiosk Browser app
 }
 
@@ -260,8 +260,8 @@ br.clearing {
   .mapboxgl-map{
     top: 145px;
     position: absolute;
-    max-width: 974px;
-    max-height: 518px;
+    width: 974px;
+    height: 518px;
 
     .mapboxgl-ctrl-attrib a {
       color: rgba(0,0,0,0.5);
@@ -314,10 +314,11 @@ br.clearing {
 
 .result {
   header {
-    padding-top: 1.3em;
+    // padding-top: 1.3em;
+    line-height: 4em;
   }
   .container {
-    padding: 10px 42px;
+    padding: 10px 32px;
 
     #logo {
       bottom: 25px;
