@@ -127,7 +127,8 @@ class MapInvest extends Component {
       "type": "symbol",
       "source": "points",
       "layout": {
-        "icon-image": "marker"
+        "icon-image": "marker",
+        "icon-allow-overlap": true
       },
       "filter": ["any",
         ["!has", "investedDrops"],
@@ -140,7 +141,8 @@ class MapInvest extends Component {
       "source": "points",
       "type": "symbol",
        "layout": {
-        "icon-image": "marker-invested"
+        "icon-image": "marker-invested",
+        "icon-allow-overlap": true
       },
       "filter": [">", "investedDrops", 0]
     });
