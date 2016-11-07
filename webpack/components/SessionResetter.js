@@ -42,7 +42,9 @@ class SessionResetter extends Component {
   componentWillReceiveProps(newProps){
     if (newProps.sessionResetter.afterPopupResetSessionSeconds >= this.resetLimit) {
       this.props.dispatch(commitReset());
-      hashHistory.push("/");
+      // hashHistory.push("/");
+
+      document.location.href="/"; 
     }
   }
 

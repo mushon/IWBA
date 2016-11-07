@@ -17,7 +17,7 @@ class Result extends Component {
 
   handleReset(e){
     this.props.dispatch(commitReset());
-    hashHistory.push("/1-start");
+    document.location.href="/";
   }
 
   render() {
