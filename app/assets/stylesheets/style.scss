@@ -260,9 +260,10 @@ br.clearing {
   .mapboxgl-map{
     top: 145px;
     position: absolute;
-    width: 974px;
-    height: 518px;
-
+    canvas{
+      width: 974px;
+      height: 518px;
+    }
     .mapboxgl-ctrl-attrib a {
       color: rgba(0,0,0,0.5);
       font-size: 10px;
