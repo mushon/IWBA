@@ -35,6 +35,7 @@ class MarkerIconLayersGenerator {
         "filter": filter,
         "layout": {
           "icon-image": "marker-scale",
+          "icon-allow-overlap": true,
           "icon-size": size
         }
       });
@@ -49,6 +50,7 @@ class MarkerIconLayersGenerator {
         "filter": [ '>=', "investedDrops", i ],
         "layout": {
           "icon-image": "marker-scale",
+          "icon-allow-overlap": true,
           "icon-size": 3.5
         }
       });
