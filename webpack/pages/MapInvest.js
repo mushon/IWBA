@@ -46,15 +46,15 @@ class MapInvest extends Component {
     // }
 
     if (newProps.mapMode != this.props.mapMode) {
-      this.changeMapMode(newProps);  
+      this.changeMapMode(newProps);
     }
 
 
     if (!_.isUndefined(this.map.getSource("points-invested"))){
-      this.map.getSource("points-invested").setData(newProps.hotspotsInvested); 
-      this.map.getSource("points").setData(newProps.hotspotsInvested);  
+      this.map.getSource("points-invested").setData(newProps.hotspotsInvested);
+      this.map.getSource("points").setData(newProps.hotspotsInvested);
     }
-    
+
     if (newProps.remainDroplets <= 0 && !this.triggerNextPage) {
 
       this.triggerNextPage = true;
@@ -63,7 +63,7 @@ class MapInvest extends Component {
       }, 2000);
     }
 
-  
+
   }
 
   componentWillUnmount(){
@@ -80,19 +80,19 @@ class MapInvest extends Component {
 
     if (props.mapMode === 'drought') {
       _.each(droughtLayerNames, droughtLayerName => {
-        this.map.setLayoutProperty(droughtLayerName, 'visibility', 'visible');        
+        this.map.setLayoutProperty(droughtLayerName, 'visibility', 'visible');
       });
 
       _.each(profitLayerNames, profitLayerName => {
-        this.map.setLayoutProperty(profitLayerName, 'visibility', 'none');        
+        this.map.setLayoutProperty(profitLayerName, 'visibility', 'none');
       });
     } else {
       _.each(droughtLayerNames, droughtLayerName => {
-        this.map.setLayoutProperty(droughtLayerName, 'visibility', 'none');        
+        this.map.setLayoutProperty(droughtLayerName, 'visibility', 'none');
       });
 
       _.each(profitLayerNames, profitLayerName => {
-        this.map.setLayoutProperty(profitLayerName, 'visibility', 'visible');        
+        this.map.setLayoutProperty(profitLayerName, 'visibility', 'visible');
       });
 
     }
@@ -176,7 +176,7 @@ class MapInvest extends Component {
         clearInterval(this.downTimer);
         this.downTimer = setInterval(() =>{
 
-          this.props.dispatch(changePourAnim({ show: true, pointSize: 30, pos: this.map.project(features[0].geometry.coordinates) }));          
+          this.props.dispatch(changePourAnim({ show: true, pointSize: 30, pos: this.map.project(features[0].geometry.coordinates) }));
           this.props.dispatch(updateDeposits(features[0].properties.name, this.easingAmount));
           this.easingAmount++;
         }, 60);
@@ -190,9 +190,9 @@ class MapInvest extends Component {
 
   }
 
-  handleMouseUp(e){ 
+  handleMouseUp(e){
     this.easingAmount = 1;
-    
+
     clearInterval(this.downTimer);
     this.props.dispatch(changePourAnim({ show: false }));
   }
@@ -227,17 +227,17 @@ class MapInvest extends Component {
           </div>
         }
         </header>
+        <div className="container" ref={ c => { this.refMapContainer = c; }} style={{ width: this.props.screenWidth - 50, height: this.props.screenHeight - 230 }}>
         {
-          this.props.pourAnim.show ? 
+          this.props.pourAnim.show ?
           <PourAnim /> : null
         }
-        <div className="container" ref={ c => { this.refMapContainer = c; }} style={{ width: this.props.screenWidth - 50, height: this.props.screenHeight - 230 }}>
 
         </div>
         <MapToggleBtn />
-      
+
         <MapLegend />
-        <SessionResetter />  
+        <SessionResetter />
       </section>
 
 
@@ -254,7 +254,7 @@ let mapStateToProps = state => {
     var hotspotIdx = _.findIndex(hotspotsInvested.features, hotspot => { return hotspot.properties.name == deposit.name });
 
     hotspotsInvested.features[hotspotIdx].properties.investedDrops = deposit.amount;
-      
+
   }); // deposit = { name: action.payload.name, amount: 5 };
 
   _.each(hotspotsInvested.features, (hotspot, i) => {

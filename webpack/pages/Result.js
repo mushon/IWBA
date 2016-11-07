@@ -12,7 +12,7 @@ class Result extends Component {
   }
 
   componentDidMount(){
-    setTimeout(this.handleReset, 5000);
+    setTimeout(this.handleReset, 10000);
   }
 
   handleReset(e){
