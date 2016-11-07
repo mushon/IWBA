@@ -260,6 +260,8 @@ br.clearing {
   .mapboxgl-map{
     top: 145px;
     position: absolute;
+    max-width: 974px;
+    max-height: 518px;
 
     .mapboxgl-ctrl-attrib a {
       color: rgba(0,0,0,0.5);
