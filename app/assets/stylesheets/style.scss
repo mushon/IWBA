@@ -264,6 +264,14 @@ br.clearing {
       width: 974px;
       height: 518px;
     }
+    &::after {
+      content: "";
+      background: #fff;
+      width: 25px;
+      height: 100%;
+      position: fixed;
+      right: 0;
+    }
     .mapboxgl-ctrl-attrib a {
       color: rgba(0,0,0,0.5);
       font-size: 10px;
