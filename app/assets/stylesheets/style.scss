@@ -50,7 +50,7 @@ body, div, p, input {
 
 header {
   margin: 30px 58px 10px;
-  margin-top: 10px; //fix for status bar height on Kiosk Browser app
+  // margin-top: 10px; //fix for status bar height on Kiosk Browser app
 }
 
 .fl {
@@ -83,8 +83,8 @@ br.clearing {
 .container{
   background:$bg;
   position: fixed;
-  // top: 141px;
-  top: 121px; //fix for status bar height on Kiosk Browser app
+  top: 141px;
+  // top: 121px; //fix for status bar height on Kiosk Browser app
   bottom: 25px;
   left: 25px;
   right: 25px;
@@ -218,7 +218,7 @@ br.clearing {
   .container {
     font-size: 60px;
     padding: 43px;
-    height: 514px;
+    // height: 514px;
   }
   a{
     position: absolute;
@@ -250,7 +250,7 @@ br.clearing {
     background: #fff;
     z-index: 999999;
     position: relative;
-    height: 135px;
+    height: 115px;
     a {
       color: $text;
       text-decoration: none;
