@@ -1,4 +1,4 @@
-# IWBA
+#![IWBA](https://raw.githubusercontent.com/mushon/IWBA/master/app/assets/images/IWBA_logo.png)
 The International Water Bank Association's Water Deposit exhibit - a water ATM for depositing your first drops
 
 ### About IWBA's water deposit
