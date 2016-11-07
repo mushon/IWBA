@@ -324,8 +324,9 @@ br.clearing {
 
 .result {
   header {
-    // padding-top: 1.3em;
-    line-height: 4em;
+    span{
+      color: #C6DDF7;
+    }
   }
   .container {
     padding: 10px 32px;
