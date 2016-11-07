@@ -227,7 +227,7 @@ class MapInvest extends Component {
           </div>
         }
         </header>
-        <div className="container" ref={ c => { this.refMapContainer = c; }} style={{ width: this.props.screenWidth - 50, height: this.props.screenHeight - 230 }}>
+        <div className="container" ref={ c => { this.refMapContainer = c; }} style={{ width: 974, height: 518 }}>
         {
           this.props.pourAnim.show ?
           <PourAnim /> : null
