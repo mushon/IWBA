@@ -260,6 +260,9 @@ br.clearing {
   .mapboxgl-map{
     top: 145px;
     position: absolute;
+    header div {
+      margin-right: -40px;
+    }
     canvas{
       width: 974px;
       height: 518px;
