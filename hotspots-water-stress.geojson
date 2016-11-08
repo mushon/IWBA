@@ -1,0 +1,388 @@
+﻿{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route_id": "L",
+        "status": "closed"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            -73.957704,
+            40.717827
+          ],
+          [
+            -73.963234,
+            40.721291
+          ],
+          [
+            -73.972271,
+            40.727004
+          ],
+          [
+            -73.98262,
+            40.731368
+          ],
+          [
+            -73.987191,
+            40.73329
+          ],
+          [
+            -73.990746,
+            40.734735
+          ],
+          [
+            -73.996874,
+            40.737345
+          ],
+          [
+            -74.002504,
+            40.739756
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "022fc5e4056b2bd5dbe1f39dc2e54407"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "view"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            -73.959171,
+            40.730005
+          ],
+          [
+            -73.960805,
+            40.73171
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "19b0b3d841f63d1bd2a5869a8caf8857"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "building",
+        "street": "Greenpoint ave",
+        "number": 224
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -73.946276,
+              40.731342
+            ],
+            [
+              -73.945925,
+              40.731465
+            ],
+            [
+              -73.945884,
+              40.731231
+            ],
+            [
+              -73.946252,
+              40.731196
+            ],
+            [
+              -73.946276,
+              40.731342
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "273a3bfe4df5498af0374c0f72317b9c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "view"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            -73.959171,
+            40.730005
+          ],
+          [
+            -73.964809,
+            40.725082
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "396ef0e3a1f6585c7fc4166dbd7f5afc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "view"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            -73.959171,
+            40.730005
+          ],
+          [
+            -73.966348,
+            40.727439
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "4c11470ed6169597ee2d5a8a3910cb87"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "view"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            -73.959171,
+            40.730005
+          ],
+          [
+            -73.965979,
+            40.726179
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "4c2b868771ec56bff52056b4d1bc4c88"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "view"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            -73.959171,
+            40.730005
+          ],
+          [
+            -73.967118,
+            40.729376
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "4efa3ea0f65f9ce4428dca559b50f2d3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "route_id": "L",
+        "status": "open",
+        "type": "subway_sttn"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.957583,
+          40.717803
+        ],
+        "type": "Point"
+      },
+      "id": "6bd31f15aa6a5c05eddb23351915f3e1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "building",
+        "number": 37,
+        "street": "Greenpoint ave"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -73.959193,
+              40.730098
+            ],
+            [
+              -73.958928,
+              40.730123
+            ],
+            [
+              -73.958919,
+              40.730052
+            ],
+            [
+              -73.958734,
+              40.730072
+            ],
+            [
+              -73.958703,
+              40.729885
+            ],
+            [
+              -73.959063,
+              40.729851
+            ],
+            [
+              -73.959061,
+              40.729844
+            ],
+            [
+              -73.959161,
+              40.729835
+            ],
+            [
+              -73.959194,
+              40.730032
+            ],
+            [
+              -73.959183,
+              40.730033
+            ],
+            [
+              -73.959193,
+              40.730098
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "897686cbba8d43c901a16a39938f4ca1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "view"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            -73.959171,
+            40.730005
+          ],
+          [
+            -73.966872,
+            40.728419
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "99d414e28f009deeba1c09b41cdfad6a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "view"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            -73.959171,
+            40.730005
+          ],
+          [
+            -73.959389,
+            40.723052
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "9e00db61df9e86f0d25286fd8e7b8e90"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "route_id": "L",
+        "type": "subway_sttn",
+        "status": "closed"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.987217,
+          40.733312
+        ],
+        "type": "Point"
+      },
+      "id": "a9833a6f9c98d7b43cb74d5a94a37e09"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "number": 224,
+        "type": "target",
+        "street": "Greenpoint ave",
+        "insight": "radiating"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.946053,
+          40.731361
+        ],
+        "type": "Point"
+      },
+      "id": "acd26b000b2c5e84fdd141bbd50c6c71"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "view"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            -73.959171,
+            40.730005
+          ],
+          [
+            -73.966379,
+            40.733156
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "b1f8bfbdcb37cf53826086b81970804f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "route_id": "L",
+        "type": "subway_sttn",
+        "status": "closed"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.982479,
+          40.731324
+        ],
+        "type": "Point"
+      },
+      "id": "c0fa48f6ee1153580e1f7b13a95df277"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "target",
+        "street": "Greenpoint ave",
+        "number": 37,
+        "insight": "view"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.959172,
+          40.730006
+        ],
+        "type": "Point"
+      },
+      "id": "fba01909a2fe281459571855a70eb49f"
+    }
+  ],
+  "type": "FeatureCollection"
+}
