@@ -26,7 +26,7 @@ class Result extends Component {
 
         <header>
           <br/>
-          Thanks, we'll be in touch…
+          Thanks, we will be in touch…
         </header>
         <div className="container">
         <span>(check your spam folder)</span>
