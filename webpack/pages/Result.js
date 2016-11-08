@@ -25,7 +25,8 @@ class Result extends Component {
       <section className="result" onClick={this.handleReset}>
 
         <header>
-          Thanks, we'll be in touch.<br/>
+          Thanks, we'll be in touch*…<br/>
+          <span>*check your spam folder</span>
         </header>
         <div className="container">
         Take care and remember,<br/>

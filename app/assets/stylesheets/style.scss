@@ -223,14 +223,14 @@ br.clearing {
   a{
     position: absolute;
     display: block;
-    height: 61px;
-    width: 47px;
+    height: 60px;
+    width: 60px;
     overflow: hidden;
-    background: url('/assets/drop-pending.svg') no-repeat center top;
+    background: url('/assets/drop.svg') no-repeat center top;
     background-size: contain;
     bottom: 85px;
     left: 50%;
-    margin: -23px;
+    margin: -30px;
     text-indent: -99999px;
     animation: dripping 3s infinite;
   }
@@ -260,13 +260,25 @@ br.clearing {
   .mapboxgl-map{
     top: 145px;
     position: absolute;
+    header div {
+      margin-right: -40px;
+    }
     canvas{
       width: 974px;
       height: 518px;
     }
-    .mapboxgl-ctrl-attrib a {
+    &::after {
+      content: "";
+      background: #fff;
+      width: 25px;
+      height: 100%;
+      position: fixed;
+      right: 0;
+    }
+    .mapboxgl-ctrl-attrib.mapboxgl-ctrl{
       color: rgba(0,0,0,0.5);
       font-size: 10px;
+      opacity: 0 !important;
     }
   }
 }
@@ -315,8 +327,9 @@ br.clearing {
 
 .result {
   header {
-    // padding-top: 1.3em;
-    line-height: 4em;
+    span{
+      color: #C6DDF7;
+    }
   }
   .container {
     padding: 10px 32px;
