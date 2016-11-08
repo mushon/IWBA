@@ -24,7 +24,7 @@ class SessionResetter extends Component {
     $(window).on("mouseup", this.resetTime);
 
     this.startedPopupInterval = setInterval(() => {
-      console.log(this.props.sessionResetter.startedToPopupSeconds);
+      // console.log(this.props.sessionResetter.startedToPopupSeconds);
       if (this.props.sessionResetter.startedToPopupSeconds <= this.popLimit - 1000) {
         this.props.dispatch(changeSessionResetter({
           startedToPopupSeconds: this.props.sessionResetter.startedToPopupSeconds + 1000,

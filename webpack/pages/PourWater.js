@@ -11,12 +11,14 @@ class PourWater extends Component {
   constructor(props){
     super(props);
 
+    this.increment = 5;
     this.state = {
       animDropletCount: 0
     };
   }
 
   componentDidMount(){
+    this.increment = 5;
     this.setAnim(this.props);
   }
 
@@ -57,10 +59,14 @@ class PourWater extends Component {
           afterPopupResetSessionSeconds: 0
         }));
         this.setState({
-          animDropletCount: this.state.animDropletCount + 4
+          animDropletCount: this.state.animDropletCount + this.increment
         });
 
+        this.increment++;
+
       } else {
+
+        this.increment = 5;
         clearInterval(this.intervalID);
       }
     }, 1);
