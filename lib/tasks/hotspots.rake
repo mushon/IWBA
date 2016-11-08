@@ -4,7 +4,6 @@ desc "hotspots sync"
 
 namespace :hotspots do
   task :dump, [:filename] => :environment do |t, args|
-    # file_data = open(args[:filename])
 
     json = JSON.parse(File.read("./hotspots_1011.json"), symbolize_names: true)
     json[:features].each do |feature|
