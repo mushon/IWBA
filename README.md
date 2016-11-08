@@ -10,7 +10,7 @@ The International Water Banking Association is a proud sponsor of the exhibition
 ### Credits
 Concept and production by [Mushon Zer-Aviv](http://mushon.com) & [Wonyoung So](http://wonyoung.so)
 
-Special thanks to Hyewon Lee and Sungil ______
+Special thanks to Hyewon Lee and Sungil Lee
 
 ## Install
 
