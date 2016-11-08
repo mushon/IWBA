@@ -214,7 +214,7 @@ class MapInvest extends Component {
           (this.props.dropletCount == this.props.remainDroplets && this.props.dropletCount != 0) ?
           <div>
             You deposited <strong>{ this.props.remainDroplets }</strong> drops<br/>
-            Press to invest in emerging drought markets:
+            Long press to invest in drought markets:
           </div> :
           this.props.remainDroplets == 0 ?
           <div>
@@ -223,7 +223,7 @@ class MapInvest extends Component {
           </div> :
           <div>
             You have <strong>{ this.props.remainDroplets }</strong> drops left<br/>
-            Press other spots to diversify your portfolio:
+            Press elsewhere to diversify your portfolio:
           </div>
         }
         </header>

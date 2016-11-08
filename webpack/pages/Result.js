@@ -29,7 +29,7 @@ class Result extends Component {
           Thanks, we'll be in touch…
         </header>
         <div className="container">
-        <span>(check your spam folder)</span> 
+        <span>(check your spam folder)</span>
         <br/>
         <br/>
         <br/>
