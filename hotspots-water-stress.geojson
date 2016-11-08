@@ -3,820 +3,23 @@
     {
       "type": "Feature",
       "properties": {
-        "": "",
         "River Basin": "",
         "Business as usual 2040": "Extremely high (>80%)",
         "Business as usual 2030": "Extremely high (>80%)",
         "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "2x increase",
+        "Change - Optimistic 2040": "2x increase",
+        "Change - Business as usual 2030": "2x increase",
+        "Change - Optimistic 2030": "2x increase",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "1.4x increase",
         "Optimistic 2040": "Extremely high (>80%)",
         "Optimistic 2030": "Extremely high (>80%)",
         "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Lebanon",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Beirut",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          35.494418,
-          33.888937
-        ],
-        "type": "Point"
-      },
-      "id": "026a5bb9b893e13ee0c5589e761abb0b"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Turkey",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Istanbul",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          28.949659,
-          41.013839
-        ],
-        "type": "Point"
-      },
-      "id": "04de93c6f4953898016d423a914e0219"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "YONGDING HE",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "China",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Beijing",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          116.397226,
-          39.907499
-        ],
-        "type": "Point"
-      },
-      "id": "0c4a1b645ab5792e1cfe712b277bebe6"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Pakistan",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Karachi",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          67.082196,
-          24.905597
-        ],
-        "type": "Point"
-      },
-      "id": "13f1a9c36810f65d57c0fd6c466287e0"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Morocco",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Casablanca",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          -7.53632,
-          33.580884
-        ],
-        "type": "Point"
-      },
-      "id": "21f69e6b0d9c9508bd75bf1715e6a7f4"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Italy",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Rome",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          12.483897,
-          41.894739
-        ],
-        "type": "Point"
-      },
-      "id": "22987efb52daa2ac9bd6b44322175a65"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Qatar",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Doha",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          51.522446,
-          25.279316
-        ],
-        "type": "Point"
-      },
-      "id": "24db901aa2836c154df1cef0000ba173"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Libya",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Benghazi",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          20.066669,
-          32.116666
-        ],
-        "type": "Point"
-      },
-      "id": "2d7d8ab99bc89594ee6909a61286c967"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "South Korea",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "seoul",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          126.801752,
-          37.534241
-        ],
-        "type": "Point"
-      },
-      "id": "31efa3e51231f6d2bc0bfe75619a7e69"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "PANUCO",
-        "Business as usual 2040": "High (40-80%)",
-        "Business as usual 2030": "High (40-80%)",
-        "Business as usual 2020": "High (40-80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "High (40-80%)",
-        "Optimistic 2020": "High (40-80%)",
-        "COUNTRY": "Mexico",
-        "Pesimistic 2040": "High (40-80%)",
-        "Title": "Mexico City",
-        "Pesimistic 2030": "High (40-80%)",
-        "Pesimistic 2020": "High (40-80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          -99.127659,
-          19.428467
-        ],
-        "type": "Point"
-      },
-      "id": "38528815867e5fdc8e2baeb0e930db94"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Japan",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Tokio",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          139.691708,
-          35.689497
-        ],
-        "type": "Point"
-      },
-      "id": "396d5c29d1bd1dd7f5166d9f2205aff5"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Saudi Arabia",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Mecca",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          39.826107,
-          21.426667
-        ],
-        "type": "Point"
-      },
-      "id": "3f61c5c32bb9f052c2c2874f1e11f935"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "United States of America",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "San Antonio",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          -98.493629,
-          29.424118
-        ],
-        "type": "Point"
-      },
-      "id": "4b0fe90109fadaccd917139c972b4630"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Kuwait",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Kuwait",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          47.749999,
-          29.499995
-        ],
-        "type": "Point"
-      },
-      "id": "5274de7cf4e04de65fe062974572108d"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Medium-high (20-40%)",
-        "Business as usual 2030": "Low-medium (10-20%)",
-        "Business as usual 2020": "Low-medium (10-20%)",
-        "Optimistic 2040": "Medium-high (20-40%)",
-        "Optimistic 2030": "Low-medium (10-20%)",
-        "Optimistic 2020": "Low-medium (10-20%)",
-        "COUNTRY": "Ireland",
-        "Pesimistic 2040": "Low-medium (10-20%)",
-        "Title": "Dublin",
-        "Pesimistic 2030": "Low-medium (10-20%)",
-        "Pesimistic 2020": "Low-medium (10-20%)"
-      },
-      "geometry": {
-        "coordinates": [
-          -6.248885,
-          53.333057
-        ],
-        "type": "Point"
-      },
-      "id": "539d5e211297445246c6937dcfd40281"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "THAMES",
-        "Business as usual 2040": "High (40-80%)",
-        "Business as usual 2030": "High (40-80%)",
-        "Business as usual 2020": "High (40-80%)",
-        "Optimistic 2040": "High (40-80%)",
-        "Optimistic 2030": "High (40-80%)",
-        "Optimistic 2020": "High (40-80%)",
-        "COUNTRY": "United Kingdom",
-        "Pesimistic 2040": "High (40-80%)",
-        "Title": "London",
-        "Pesimistic 2030": "High (40-80%)",
-        "Pesimistic 2020": "High (40-80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          -0.125738,
-          51.508528
-        ],
-        "type": "Point"
-      },
-      "id": "5635e97e2d1bd0df306f523ee9ead90c"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Iran",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Tehran",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          51.421506,
-          35.694388
-        ],
-        "type": "Point"
-      },
-      "id": "563714cdcd07dbefd22bef8c837f3fa3"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "South Africa",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Cape Town",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          18.423217,
-          -33.925836
-        ],
-        "type": "Point"
-      },
-      "id": "564978deee3dd246116ce7a1b3460ad4"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "High (40-80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Algeria",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Algiers",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "High (40-80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          3.041966,
-          36.752496
-        ],
-        "type": "Point"
-      },
-      "id": "582503d90e5fe48018d9cbe16517deca"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "GANGES",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "India",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "New Delhi",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          77.224449,
-          28.635757
-        ],
-        "type": "Point"
-      },
-      "id": "628a0271b63d241581551446ac028387"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Russia",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "San Petersburg",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          30.264168,
-          59.894438
-        ],
-        "type": "Point"
-      },
-      "id": "62981184e7910a766ed015591b63d3a9"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Australia",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Melbourne",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          144.963319,
-          -37.813999
-        ],
-        "type": "Point"
-      },
-      "id": "6822759c07ec27c4a0cf4b6ab3806e01"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Bahrain",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Bahrain",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          50.499997,
-          25.999999
-        ],
-        "type": "Point"
-      },
-      "id": "6aa9ba65ad6dc5ff4e80e4d3b911d610"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Ukraine",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Crimea",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          33.999997,
-          44.999999
-        ],
-        "type": "Point"
-      },
-      "id": "6eab7d5bf4c9b11eb980eb9650492721"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "River Basin": "",
-        "Business as usual 2040": "High (40-80%)",
-        "Business as usual 2030": "High (40-80%)",
-        "Business as usual 2020": "High (40-80%)",
-        "Optimistic 2040": "High (40-80%)",
-        "Optimistic 2030": "High (40-80%)",
-        "Optimistic 2020": "High (40-80%)",
-        "COUNTRY": "Philippines",
-        "Pesimistic 2040": "High (40-80%)",
-        "Title": "Manila",
-        "Pesimistic 2030": "High (40-80%)",
-        "Pesimistic 2020": "High (40-80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          120.982197,
-          14.604197
-        ],
-        "type": "Point"
-      },
-      "id": "840afc9597d98c1d03f286d27b558ae6"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Peru",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Lima",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          -77.028239,
-          -12.043175
-        ],
-        "type": "Point"
-      },
-      "id": "873abb60f53e77402992c5a403c98a8a"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "High (40-80%)",
-        "Optimistic 2040": "High (40-80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "High (40-80%)",
-        "COUNTRY": "China",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Shanghai",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "High (40-80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          121.458057,
-          31.222217
-        ],
-        "type": "Point"
-      },
-      "id": "8bd9b7d0c274285e08d611a97efb539a"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "United States of America",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "New York City",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          -74.005969,
-          40.714269
-        ],
-        "type": "Point"
-      },
-      "id": "8c0865959fe7c5ab3064b9364297365a"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "United States of America",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Baltimore",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          -76.612188,
-          39.290379
-        ],
-        "type": "Point"
-      },
-      "id": "8c38e2307499782cd658d9c5b78330c4"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Uzbekistan",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Tashkent",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          69.216266,
-          41.264647
-        ],
-        "type": "Point"
-      },
-      "id": "9015b634ef5e033dc3fb26da29923c48"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "United States of America",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Los Angeles",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          -118.243677,
-          34.052228
-        ],
-        "type": "Point"
-      },
-      "id": "9ca001b9a68183122fc5d4f2ecee4dab"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "2x increase",
+        "Change - Pesimistic 2030": "1.4x increase",
         "COUNTRY": "Indonesia",
+        "Change - Pesimistic 2020": "1.4x increase",
         "Pesimistic 2040": "Extremely high (>80%)",
         "Title": "Jakarta",
         "Pesimistic 2030": "Extremely high (>80%)",
@@ -829,254 +32,96 @@
         ],
         "type": "Point"
       },
-      "id": "9d559ba7acaefeb3b53c62ac836ae7dc"
+      "id": "0358ddb1980591375483aa078c2e6bcb"
     },
     {
       "type": "Feature",
       "properties": {
-        "": "",
         "River Basin": "",
         "Business as usual 2040": "Extremely high (>80%)",
         "Business as usual 2030": "Extremely high (>80%)",
         "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "1.4x increase",
+        "Change - Optimistic 2040": "1.4x increase",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "1.4x increase",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "1.4x increase",
         "Optimistic 2040": "Extremely high (>80%)",
         "Optimistic 2030": "Extremely high (>80%)",
         "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Spain",
+        "Change - Pesimistic 2040": "1.4x increase",
+        "Change - Pesimistic 2030": "1.4x increase",
+        "COUNTRY": "Qatar",
+        "Change - Pesimistic 2020": "1.4x increase",
         "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Valencia",
+        "Title": "Doha",
         "Pesimistic 2030": "Extremely high (>80%)",
         "Pesimistic 2020": "Extremely high (>80%)"
       },
       "geometry": {
         "coordinates": [
-          -0.377388,
-          39.469747
+          51.522446,
+          25.279316
         ],
         "type": "Point"
       },
-      "id": "a7a31fca6db075445351abc24775856a"
+      "id": "05a5b0a588b996c736264137ef081a23"
     },
     {
       "type": "Feature",
       "properties": {
-        "": "",
         "River Basin": "",
         "Business as usual 2040": "Extremely high (>80%)",
         "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
+        "Business as usual 2020": "High (40-80%)",
+        "Change - Business as usual 2040": "2.8x or greater increase",
+        "Change - Optimistic 2040": "2.8x or greater increase",
+        "Change - Business as usual 2030": "2x increase",
+        "Change - Optimistic 2030": "2x increase",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "1.4x increase",
         "Optimistic 2040": "Extremely high (>80%)",
         "Optimistic 2030": "Extremely high (>80%)",
         "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Israel",
+        "Change - Pesimistic 2040": "2.8x or greater increase",
+        "Change - Pesimistic 2030": "2x increase",
+        "COUNTRY": "Algeria",
+        "Change - Pesimistic 2020": "1.4x increase",
         "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Jerusalem",
+        "Title": "Algiers",
         "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
+        "Pesimistic 2020": "High (40-80%)"
       },
       "geometry": {
         "coordinates": [
-          35.205211,
-          31.778701
+          3.041966,
+          36.752496
         ],
         "type": "Point"
       },
-      "id": "aac48c806d4114091067dd2bcdc7047c"
+      "id": "06102dd07d7e5ecf4a058f5471f9f004"
     },
     {
       "type": "Feature",
       "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Yemen",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Sanaa",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          44.206667,
-          15.354717
-        ],
-        "type": "Point"
-      },
-      "id": "ba935f5de8445d9b80cac6f214d1c27e"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Singapore",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Singapore",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          103.850067,
-          1.289667
-        ],
-        "type": "Point"
-      },
-      "id": "be90271bcb388e3e3de62e5c7fe5156b"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "United States of America",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Salt Lake City",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          -111.891046,
-          40.760777
-        ],
-        "type": "Point"
-      },
-      "id": "bf28bd1a2b563c4c8db20a92fed0a012"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Chile",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Santiago",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          -70.796971,
-          -33.521352
-        ],
-        "type": "Point"
-      },
-      "id": "c91ce57e3ad48708a3df942f6337ee8f"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "PARANA",
-        "Business as usual 2040": "Low (<10%)",
-        "Business as usual 2030": "Low (<10%)",
-        "Business as usual 2020": "Low (<10%)",
-        "Optimistic 2040": "Low (<10%)",
-        "Optimistic 2030": "Low (<10%)",
-        "Optimistic 2020": "Low (<10%)",
-        "COUNTRY": "Argentina",
-        "Pesimistic 2040": "Low (<10%)",
-        "Title": "Buenos Aires",
-        "Pesimistic 2030": "Low (<10%)",
-        "Pesimistic 2020": "Low (<10%)"
-      },
-      "geometry": {
-        "coordinates": [
-          -58.377227,
-          -34.613145
-        ],
-        "type": "Point"
-      },
-      "id": "c940cde106e4d2c321078c559ec0bec0"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "United Arab Emirates",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Dubai",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          55.275263,
-          25.213027
-        ],
-        "type": "Point"
-      },
-      "id": "ca4db06f127944abfc5954a09beca532"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "Tunisia",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Tunis",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          10.165788,
-          36.818969
-        ],
-        "type": "Point"
-      },
-      "id": "dd92b34cdde7db98110964649dde1526"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
         "River Basin": "MISSISSIPPI RIVER",
         "Business as usual 2040": "Extremely high (>80%)",
         "Business as usual 2030": "Extremely high (>80%)",
         "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "1.4x increase",
+        "Change - Optimistic 2040": "1.4x increase",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "Near normal",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
         "Optimistic 2040": "Extremely high (>80%)",
         "Optimistic 2030": "Extremely high (>80%)",
         "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "1.4x increase",
+        "Change - Pesimistic 2030": "1.4x increase",
         "COUNTRY": "United States of America",
+        "Change - Pesimistic 2020": "Near normal",
         "Pesimistic 2040": "Extremely high (>80%)",
         "Title": "Denver",
         "Pesimistic 2030": "Extremely high (>80%)",
@@ -1089,98 +134,28 @@
         ],
         "type": "Point"
       },
-      "id": "de9eefc489d1886d3a1eb87fe55b263d"
+      "id": "18babd471c713a59863a5a5b6b250c8f"
     },
     {
       "type": "Feature",
       "properties": {
-        "": "",
         "River Basin": "",
         "Business as usual 2040": "Extremely high (>80%)",
         "Business as usual 2030": "Extremely high (>80%)",
         "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "1.4x increase",
+        "Change - Optimistic 2040": "1.4x increase",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "1.4x increase",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "1.4x increase",
         "Optimistic 2040": "Extremely high (>80%)",
         "Optimistic 2030": "Extremely high (>80%)",
         "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "India",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "Chennai",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          80.278467,
-          13.087836
-        ],
-        "type": "Point"
-      },
-      "id": "eb7c1ce1c7625e7482da4bb5c49f63bf"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
-        "COUNTRY": "United States of America",
-        "Pesimistic 2040": "Extremely high (>80%)",
-        "Title": "San Francisco",
-        "Pesimistic 2030": "Extremely high (>80%)",
-        "Pesimistic 2020": "Extremely high (>80%)"
-      },
-      "geometry": {
-        "coordinates": [
-          -122.419419,
-          37.774927
-        ],
-        "type": "Point"
-      },
-      "id": "eedc2745abee9789fb9e87153ebb3a12"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "COLORADO RIVER (PACIFIC OCEAN)",
-        "Business as usual 2040": "Medium-high (20-40%)",
-        "Business as usual 2030": "Medium-high (20-40%)",
-        "Business as usual 2020": "Medium-high (20-40%)",
-        "Optimistic 2040": "Medium-high (20-40%)",
-        "Optimistic 2030": "Low-medium (10-20%)",
-        "Optimistic 2020": "Low-medium (10-20%)",
-        "COUNTRY": "United States of America",
-        "Pesimistic 2040": "Low-medium (10-20%)",
-        "Title": "Las Vegas",
-        "Pesimistic 2030": "Medium-high (20-40%)",
-        "Pesimistic 2020": "Medium-high (20-40%)"
-      },
-      "geometry": {
-        "coordinates": [
-          -115.137216,
-          36.174968
-        ],
-        "type": "Point"
-      },
-      "id": "f86e8877d937833be91fb2a8041d58c2"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "": "",
-        "River Basin": "",
-        "Business as usual 2040": "Extremely high (>80%)",
-        "Business as usual 2030": "Extremely high (>80%)",
-        "Business as usual 2020": "Extremely high (>80%)",
-        "Optimistic 2040": "Extremely high (>80%)",
-        "Optimistic 2030": "Extremely high (>80%)",
-        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "1.4x increase",
+        "Change - Pesimistic 2030": "1.4x increase",
         "COUNTRY": "Venezuela",
+        "Change - Pesimistic 2020": "Near normal",
         "Pesimistic 2040": "Extremely high (>80%)",
         "Title": "Caracas",
         "Pesimistic 2030": "Extremely high (>80%)",
@@ -1193,7 +168,1401 @@
         ],
         "type": "Point"
       },
-      "id": "f8f7f49f1975b33a66556f25be6b141c"
+      "id": "2656228e6b701642c782f33d343e4d3d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "THAMES",
+        "Business as usual 2040": "High (40-80%)",
+        "Business as usual 2030": "High (40-80%)",
+        "Business as usual 2020": "High (40-80%)",
+        "Change - Business as usual 2040": "1.4x decrease",
+        "Change - Optimistic 2040": "1.4x decrease",
+        "Change - Business as usual 2030": "1.4x decrease",
+        "Change - Optimistic 2030": "1.4x decrease",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "High (40-80%)",
+        "Optimistic 2030": "High (40-80%)",
+        "Optimistic 2020": "High (40-80%)",
+        "Change - Pesimistic 2040": "1.4x decrease",
+        "Change - Pesimistic 2030": "1.4x decrease",
+        "COUNTRY": "United Kingdom",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "High (40-80%)",
+        "Title": "London",
+        "Pesimistic 2030": "High (40-80%)",
+        "Pesimistic 2020": "High (40-80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          -0.125738,
+          51.508528
+        ],
+        "type": "Point"
+      },
+      "id": "28a017a8d61cf076e7f8e414a7ee69f9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "YONGDING HE",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "Near normal",
+        "Change - Optimistic 2040": "1.4x increase",
+        "Change - Business as usual 2030": "Near normal",
+        "Change - Optimistic 2030": "1.4x increase",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "Near normal",
+        "Change - Pesimistic 2030": "Near normal",
+        "COUNTRY": "China",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Beijing",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          116.397226,
+          39.907499
+        ],
+        "type": "Point"
+      },
+      "id": "28f53572e7faf8ae6d905584d039ca7c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "2x increase",
+        "Change - Optimistic 2040": "2x increase",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "1.4x increase",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "1.4x increase",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "2x increase",
+        "Change - Pesimistic 2030": "2x increase",
+        "COUNTRY": "Israel",
+        "Change - Pesimistic 2020": "1.4x increase",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Jerusalem",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          35.205211,
+          31.778701
+        ],
+        "type": "Point"
+      },
+      "id": "2ea12f7fdccd63f995f3118fb79f75db"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "2x increase",
+        "Change - Optimistic 2040": "2x increase",
+        "Change - Business as usual 2030": "2x increase",
+        "Change - Optimistic 2030": "2x increase",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "1.4x increase",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "2.8x or greater increase",
+        "Change - Pesimistic 2030": "2x increase",
+        "COUNTRY": "Chile",
+        "Change - Pesimistic 2020": "1.4x increase",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Santiago",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          -70.796971,
+          -33.521352
+        ],
+        "type": "Point"
+      },
+      "id": "2f4dfec067499ac70dc91eaa6ebb9feb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "1.4x increase",
+        "Change - Optimistic 2040": "1.4x increase",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "1.4x increase",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "1.4x increase",
+        "Change - Pesimistic 2030": "Near normal",
+        "COUNTRY": "Singapore",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Singapore",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          103.850067,
+          1.289667
+        ],
+        "type": "Point"
+      },
+      "id": "3718880ce3cd5c0f6a6b798c5994b161"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "Near normal",
+        "Change - Optimistic 2040": "Near normal",
+        "Change - Business as usual 2030": "Near normal",
+        "Change - Optimistic 2030": "Near normal",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "Near normal",
+        "Change - Pesimistic 2030": "Near normal",
+        "COUNTRY": "United States of America",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "San Francisco",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.419419,
+          37.774927
+        ],
+        "type": "Point"
+      },
+      "id": "38cf1b57df461d575efec6acd723284a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "2x increase",
+        "Change - Optimistic 2040": "2x increase",
+        "Change - Business as usual 2030": "2x increase",
+        "Change - Optimistic 2030": "2x increase",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "1.4x increase",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "2x increase",
+        "Change - Pesimistic 2030": "2x increase",
+        "COUNTRY": "Lebanon",
+        "Change - Pesimistic 2020": "1.4x increase",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Beirut",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          35.494418,
+          33.888937
+        ],
+        "type": "Point"
+      },
+      "id": "3ee077e6ce2f78315833d7b260b3b863"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "1.4x decrease",
+        "Change - Optimistic 2040": "1.4x decrease",
+        "Change - Business as usual 2030": "1.4x decrease",
+        "Change - Optimistic 2030": "1.4x decrease",
+        "Change - Business as usual 2020": "1.4x decrease",
+        "Change - Optimistic 2020": "1.4x decrease",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "1.4x decrease",
+        "Change - Pesimistic 2030": "1.4x decrease",
+        "COUNTRY": "Peru",
+        "Change - Pesimistic 2020": "1.4x decrease",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Lima",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          -77.028239,
+          -12.043175
+        ],
+        "type": "Point"
+      },
+      "id": "4cfa464409e0351c9f5ac8b86a517557"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "2x increase",
+        "Change - Optimistic 2040": "2x increase",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "1.4x increase",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "1.4x increase",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "1.4x increase",
+        "Change - Pesimistic 2030": "1.4x increase",
+        "COUNTRY": "Kuwait",
+        "Change - Pesimistic 2020": "1.4x increase",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Kuwait",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          47.749999,
+          29.499995
+        ],
+        "type": "Point"
+      },
+      "id": "572610cd63f9e6c4a8e758c6a35abc7e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "Near normal",
+        "Change - Optimistic 2040": "Near normal",
+        "Change - Business as usual 2030": "Near normal",
+        "Change - Optimistic 2030": "Near normal",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "Near normal",
+        "Change - Pesimistic 2030": "Near normal",
+        "COUNTRY": "South Korea",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "seoul",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          126.801752,
+          37.534241
+        ],
+        "type": "Point"
+      },
+      "id": "5b11ad60fa57fae5081f1e6519282a06"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "1.4x increase",
+        "Change - Optimistic 2040": "1.4x increase",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "1.4x increase",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "1.4x increase",
+        "Change - Pesimistic 2030": "Near normal",
+        "COUNTRY": "Italy",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Rome",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          12.483897,
+          41.894739
+        ],
+        "type": "Point"
+      },
+      "id": "5e03c676684d5f1571b141ab62199f55"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "1.4x increase",
+        "Change - Optimistic 2040": "Near normal",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "Near normal",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "1.4x increase",
+        "Change - Pesimistic 2030": "1.4x increase",
+        "COUNTRY": "Uzbekistan",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Tashkent",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          69.216266,
+          41.264647
+        ],
+        "type": "Point"
+      },
+      "id": "643aacfd4aefc044f564f58579989d93"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "PANUCO",
+        "Business as usual 2040": "High (40-80%)",
+        "Business as usual 2030": "High (40-80%)",
+        "Business as usual 2020": "High (40-80%)",
+        "Change - Business as usual 2040": "2x increase",
+        "Change - Optimistic 2040": "2x increase",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "2x increase",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "1.4x increase",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "High (40-80%)",
+        "Optimistic 2020": "High (40-80%)",
+        "Change - Pesimistic 2040": "2x increase",
+        "Change - Pesimistic 2030": "1.4x increase",
+        "COUNTRY": "Mexico",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "High (40-80%)",
+        "Title": "Mexico City",
+        "Pesimistic 2030": "High (40-80%)",
+        "Pesimistic 2020": "High (40-80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          -99.127659,
+          19.428467
+        ],
+        "type": "Point"
+      },
+      "id": "6e3c3c09ad201890dd67851da8142443"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Medium-high (20-40%)",
+        "Business as usual 2030": "Low-medium (10-20%)",
+        "Business as usual 2020": "Low-medium (10-20%)",
+        "Change - Business as usual 2040": "1.4x increase",
+        "Change - Optimistic 2040": "1.4x increase",
+        "Change - Business as usual 2030": "Near normal",
+        "Change - Optimistic 2030": "Near normal",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Medium-high (20-40%)",
+        "Optimistic 2030": "Low-medium (10-20%)",
+        "Optimistic 2020": "Low-medium (10-20%)",
+        "Change - Pesimistic 2040": "Near normal",
+        "Change - Pesimistic 2030": "Near normal",
+        "COUNTRY": "Ireland",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Low-medium (10-20%)",
+        "Title": "Dublin",
+        "Pesimistic 2030": "Low-medium (10-20%)",
+        "Pesimistic 2020": "Low-medium (10-20%)"
+      },
+      "geometry": {
+        "coordinates": [
+          -6.248885,
+          53.333057
+        ],
+        "type": "Point"
+      },
+      "id": "6eb9d214411ecb6b1379d42fd40dee6e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "High (40-80%)",
+        "Change - Business as usual 2040": "1.4x increase",
+        "Change - Optimistic 2040": "Near normal",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "Near normal",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "High (40-80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "High (40-80%)",
+        "Change - Pesimistic 2040": "1.4x increase",
+        "Change - Pesimistic 2030": "1.4x increase",
+        "COUNTRY": "China",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Shanghai",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "High (40-80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          121.458057,
+          31.222217
+        ],
+        "type": "Point"
+      },
+      "id": "6fdf59f2688573fbf1b25d475169fd70"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "1.4x increase",
+        "Change - Optimistic 2040": "Near normal",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "Near normal",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "Near normal",
+        "Change - Pesimistic 2030": "Near normal",
+        "COUNTRY": "United States of America",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Salt Lake City",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          -111.891046,
+          40.760777
+        ],
+        "type": "Point"
+      },
+      "id": "70b716131229c52fd35a20622c43fe8e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "High (40-80%)",
+        "Business as usual 2030": "High (40-80%)",
+        "Business as usual 2020": "High (40-80%)",
+        "Change - Business as usual 2040": "2.8x or greater increase",
+        "Change - Optimistic 2040": "2.8x or greater increase",
+        "Change - Business as usual 2030": "2x increase",
+        "Change - Optimistic 2030": "2x increase",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "1.4x increase",
+        "Optimistic 2040": "High (40-80%)",
+        "Optimistic 2030": "High (40-80%)",
+        "Optimistic 2020": "High (40-80%)",
+        "Change - Pesimistic 2040": "2.8x or greater increase",
+        "Change - Pesimistic 2030": "2x increase",
+        "COUNTRY": "Philippines",
+        "Change - Pesimistic 2020": "1.4x increase",
+        "Pesimistic 2040": "High (40-80%)",
+        "Title": "Manila",
+        "Pesimistic 2030": "High (40-80%)",
+        "Pesimistic 2020": "High (40-80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          120.982197,
+          14.604197
+        ],
+        "type": "Point"
+      },
+      "id": "75587428751ab5d5502e1da2b434d6ca"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "2x increase",
+        "Change - Optimistic 2040": "2x increase",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "1.4x increase",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "1.4x increase",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "2x increase",
+        "Change - Pesimistic 2030": "1.4x increase",
+        "COUNTRY": "Saudi Arabia",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Mecca",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          39.826107,
+          21.426667
+        ],
+        "type": "Point"
+      },
+      "id": "82d8cc9f6880eea3b1f08129480bb9c7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "2x increase",
+        "Change - Optimistic 2040": "2x increase",
+        "Change - Business as usual 2030": "2x increase",
+        "Change - Optimistic 2030": "2x increase",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "1.4x increase",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "2x increase",
+        "Change - Pesimistic 2030": "2x increase",
+        "COUNTRY": "United Arab Emirates",
+        "Change - Pesimistic 2020": "1.4x increase",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Dubai",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          55.275263,
+          25.213027
+        ],
+        "type": "Point"
+      },
+      "id": "8776060fde7087197f5ee1e3db4e26bb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "Near normal",
+        "Change - Optimistic 2040": "1.4x increase",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "Near normal",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "1.4x increase",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "Near normal",
+        "Change - Pesimistic 2030": "1.4x increase",
+        "COUNTRY": "India",
+        "Change - Pesimistic 2020": "1.4x increase",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Chennai",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          80.278467,
+          13.087836
+        ],
+        "type": "Point"
+      },
+      "id": "90d247b208fc70f8d0efd4a783473b0e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "Near normal",
+        "Change - Optimistic 2040": "1.4x increase",
+        "Change - Business as usual 2030": "Near normal",
+        "Change - Optimistic 2030": "1.4x increase",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "Near normal",
+        "Change - Pesimistic 2030": "Near normal",
+        "COUNTRY": "South Africa",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Cape Town",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          18.423217,
+          -33.925836
+        ],
+        "type": "Point"
+      },
+      "id": "92f5ff74d48921b31bf61639af225c1d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "COLORADO RIVER (PACIFIC OCEAN)",
+        "Business as usual 2040": "Medium-high (20-40%)",
+        "Business as usual 2030": "Medium-high (20-40%)",
+        "Business as usual 2020": "Medium-high (20-40%)",
+        "Change - Business as usual 2040": "1.4x increase",
+        "Change - Optimistic 2040": "Near normal",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "Near normal",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Medium-high (20-40%)",
+        "Optimistic 2030": "Low-medium (10-20%)",
+        "Optimistic 2020": "Low-medium (10-20%)",
+        "Change - Pesimistic 2040": "Near normal",
+        "Change - Pesimistic 2030": "1.4x increase",
+        "COUNTRY": "United States of America",
+        "Change - Pesimistic 2020": "1.4x increase",
+        "Pesimistic 2040": "Low-medium (10-20%)",
+        "Title": "Las Vegas",
+        "Pesimistic 2030": "Medium-high (20-40%)",
+        "Pesimistic 2020": "Medium-high (20-40%)"
+      },
+      "geometry": {
+        "coordinates": [
+          -115.137216,
+          36.174968
+        ],
+        "type": "Point"
+      },
+      "id": "95eb10098206c2c3bc0afeabfcc7edc6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "Near normal",
+        "Change - Optimistic 2040": "Near normal",
+        "Change - Business as usual 2030": "Near normal",
+        "Change - Optimistic 2030": "Near normal",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "Near normal",
+        "Change - Pesimistic 2030": "Near normal",
+        "COUNTRY": "Yemen",
+        "Change - Pesimistic 2020": "1.4x increase",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Sanaa",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          44.206667,
+          15.354717
+        ],
+        "type": "Point"
+      },
+      "id": "9d522814469d641aba21a29964e83d75"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "2x increase",
+        "Change - Optimistic 2040": "1.4x increase",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "1.4x increase",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "1.4x increase",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "1.4x increase",
+        "Change - Pesimistic 2030": "Near normal",
+        "COUNTRY": "Australia",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Melbourne",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          144.963319,
+          -37.813999
+        ],
+        "type": "Point"
+      },
+      "id": "a0d65e043f686aeb02ce484724d918a1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "Near normal",
+        "Change - Optimistic 2040": "Near normal",
+        "Change - Business as usual 2030": "Near normal",
+        "Change - Optimistic 2030": "Near normal",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "1.4x decrease",
+        "Change - Pesimistic 2030": "Near normal",
+        "COUNTRY": "United States of America",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "New York City",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.005969,
+          40.714269
+        ],
+        "type": "Point"
+      },
+      "id": "a25226377faa10da1f0c25eba9545294"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "2.8x or greater increase",
+        "Change - Optimistic 2040": "2.8x or greater increase",
+        "Change - Business as usual 2030": "2.8x or greater increase",
+        "Change - Optimistic 2030": "2.8x or greater increase",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "2x increase",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "2.8x or greater increase",
+        "Change - Pesimistic 2030": "2.8x or greater increase",
+        "COUNTRY": "Morocco",
+        "Change - Pesimistic 2020": "2x increase",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Casablanca",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          -7.53632,
+          33.580884
+        ],
+        "type": "Point"
+      },
+      "id": "a4d2713426db32536b9524cb10ad7d73"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "2x increase",
+        "Change - Optimistic 2040": "2x increase",
+        "Change - Business as usual 2030": "2x increase",
+        "Change - Optimistic 2030": "1.4x increase",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "1.4x increase",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "2x increase",
+        "Change - Pesimistic 2030": "2x increase",
+        "COUNTRY": "Turkey",
+        "Change - Pesimistic 2020": "1.4x increase",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Istanbul",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          28.949659,
+          41.013839
+        ],
+        "type": "Point"
+      },
+      "id": "ab9d0276179c6e17e05ef866f3796838"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "1.4x increase",
+        "Change - Optimistic 2040": "1.4x increase",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "1.4x increase",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "1.4x increase",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "1.4x increase",
+        "Change - Pesimistic 2030": "1.4x increase",
+        "COUNTRY": "Spain",
+        "Change - Pesimistic 2020": "1.4x increase",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Valencia",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          -0.377388,
+          39.469747
+        ],
+        "type": "Point"
+      },
+      "id": "ae7a4060bf60c6fb5130b9f3433e72d6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "GANGES",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "Near normal",
+        "Change - Optimistic 2040": "1.4x increase",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "Near normal",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "1.4x increase",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "Near normal",
+        "Change - Pesimistic 2030": "1.4x increase",
+        "COUNTRY": "India",
+        "Change - Pesimistic 2020": "1.4x increase",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "New Delhi",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          77.224449,
+          28.635757
+        ],
+        "type": "Point"
+      },
+      "id": "bb5fac7608abd4e9bfb51d67fdbf5809"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "1.4x increase",
+        "Change - Optimistic 2040": "1.4x increase",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "1.4x increase",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "2x increase",
+        "Change - Pesimistic 2030": "1.4x increase",
+        "COUNTRY": "Libya",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Benghazi",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          20.066669,
+          32.116666
+        ],
+        "type": "Point"
+      },
+      "id": "bf472d0a10f0e485da938300f40bdc49"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "Near normal",
+        "Change - Optimistic 2040": "Near normal",
+        "Change - Business as usual 2030": "Near normal",
+        "Change - Optimistic 2030": "Near normal",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "Near normal",
+        "Change - Pesimistic 2030": "Near normal",
+        "COUNTRY": "United States of America",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Baltimore",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.612188,
+          39.290379
+        ],
+        "type": "Point"
+      },
+      "id": "c2e9463638e441a30a0c882626723f2c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "1.4x decrease",
+        "Change - Optimistic 2040": "1.4x decrease",
+        "Change - Business as usual 2030": "Near normal",
+        "Change - Optimistic 2030": "Near normal",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "1.4x decrease",
+        "Change - Pesimistic 2030": "Near normal",
+        "COUNTRY": "Japan",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Tokio",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          139.691708,
+          35.689497
+        ],
+        "type": "Point"
+      },
+      "id": "c755d8d96d402e65e830b483307815f4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "1.4x increase",
+        "Change - Optimistic 2040": "1.4x increase",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "1.4x increase",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "1.4x increase",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "1.4x increase",
+        "Change - Pesimistic 2030": "1.4x increase",
+        "COUNTRY": "United States of America",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "San Antonio",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          -98.493629,
+          29.424118
+        ],
+        "type": "Point"
+      },
+      "id": "c9f781ec74f1a5ed33d3f2b7cebefeae"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "2x increase",
+        "Change - Optimistic 2040": "1.4x increase",
+        "Change - Business as usual 2030": "2x increase",
+        "Change - Optimistic 2030": "1.4x increase",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "1.4x increase",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "1.4x increase",
+        "Change - Pesimistic 2030": "2x increase",
+        "COUNTRY": "Bahrain",
+        "Change - Pesimistic 2020": "1.4x increase",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Bahrain",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          50.499997,
+          25.999999
+        ],
+        "type": "Point"
+      },
+      "id": "c9fc943d00737863adb22eb64bd054fc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "2.8x or greater increase",
+        "Change - Optimistic 2040": "2.8x or greater increase",
+        "Change - Business as usual 2030": "2x increase",
+        "Change - Optimistic 2030": "2x increase",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "1.4x increase",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "2.8x or greater increase",
+        "Change - Pesimistic 2030": "2x increase",
+        "COUNTRY": "Ukraine",
+        "Change - Pesimistic 2020": "1.4x increase",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Crimea",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          33.999997,
+          44.999999
+        ],
+        "type": "Point"
+      },
+      "id": "ceb02b5fc7b0580c0636ff7510bd907f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "2x increase",
+        "Change - Optimistic 2040": "2x increase",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "2x increase",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "1.4x increase",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "2x increase",
+        "Change - Pesimistic 2030": "2x increase",
+        "COUNTRY": "Pakistan",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Karachi",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          67.082196,
+          24.905597
+        ],
+        "type": "Point"
+      },
+      "id": "d60648de31ee1d4b733789f0570bb6e8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "1.4x increase",
+        "Change - Optimistic 2040": "1.4x increase",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "1.4x increase",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "1.4x increase",
+        "Change - Pesimistic 2030": "1.4x increase",
+        "COUNTRY": "Iran",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Tehran",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          51.421506,
+          35.694388
+        ],
+        "type": "Point"
+      },
+      "id": "d61a0835f8e6a0ba564911d72d5ae6cd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "1.4x increase",
+        "Change - Optimistic 2040": "1.4x increase",
+        "Change - Business as usual 2030": "1.4x increase",
+        "Change - Optimistic 2030": "1.4x increase",
+        "Change - Business as usual 2020": "1.4x increase",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "1.4x increase",
+        "Change - Pesimistic 2030": "1.4x increase",
+        "COUNTRY": "Tunisia",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Tunis",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          10.165788,
+          36.818969
+        ],
+        "type": "Point"
+      },
+      "id": "efd80cadc22b136481463c5328f4eddf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "PARANA",
+        "Business as usual 2040": "Low (<10%)",
+        "Business as usual 2030": "Low (<10%)",
+        "Business as usual 2020": "Low (<10%)",
+        "Change - Business as usual 2040": "Near normal",
+        "Change - Optimistic 2040": "Near normal",
+        "Change - Business as usual 2030": "Near normal",
+        "Change - Optimistic 2030": "Near normal",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Low (<10%)",
+        "Optimistic 2030": "Low (<10%)",
+        "Optimistic 2020": "Low (<10%)",
+        "Change - Pesimistic 2040": "Near normal",
+        "Change - Pesimistic 2030": "Near normal",
+        "COUNTRY": "Argentina",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Low (<10%)",
+        "Title": "Buenos Aires",
+        "Pesimistic 2030": "Low (<10%)",
+        "Pesimistic 2020": "Low (<10%)"
+      },
+      "geometry": {
+        "coordinates": [
+          -58.377227,
+          -34.613145
+        ],
+        "type": "Point"
+      },
+      "id": "f52fd9e55a5fcf3c1e44de8f477183c1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "Near normal",
+        "Change - Optimistic 2040": "1.4x increase",
+        "Change - Business as usual 2030": "Near normal",
+        "Change - Optimistic 2030": "Near normal",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "Near normal",
+        "Change - Pesimistic 2030": "Near normal",
+        "COUNTRY": "Russia",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "San Petersburg",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          30.264168,
+          59.894438
+        ],
+        "type": "Point"
+      },
+      "id": "f74d3afa7fb490751fd63320b0ffec9b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "River Basin": "",
+        "Business as usual 2040": "Extremely high (>80%)",
+        "Business as usual 2030": "Extremely high (>80%)",
+        "Business as usual 2020": "Extremely high (>80%)",
+        "Change - Business as usual 2040": "Near normal",
+        "Change - Optimistic 2040": "Near normal",
+        "Change - Business as usual 2030": "Near normal",
+        "Change - Optimistic 2030": "Near normal",
+        "Change - Business as usual 2020": "Near normal",
+        "Change - Optimistic 2020": "Near normal",
+        "Optimistic 2040": "Extremely high (>80%)",
+        "Optimistic 2030": "Extremely high (>80%)",
+        "Optimistic 2020": "Extremely high (>80%)",
+        "Change - Pesimistic 2040": "1.4x decrease",
+        "Change - Pesimistic 2030": "Near normal",
+        "COUNTRY": "United States of America",
+        "Change - Pesimistic 2020": "Near normal",
+        "Pesimistic 2040": "Extremely high (>80%)",
+        "Title": "Los Angeles",
+        "Pesimistic 2030": "Extremely high (>80%)",
+        "Pesimistic 2020": "Extremely high (>80%)"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.243677,
+          34.052228
+        ],
+        "type": "Point"
+      },
+      "id": "f80efe641ad8b7e85be2348e29c06245"
     }
   ],
   "type": "FeatureCollection"
