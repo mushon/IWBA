@@ -8,7 +8,7 @@ class Admin::HotspotsController < Admin::AdminController
   end
 
   def create
-    @hotspot = Hotspot.new(params.require(:hotspot).permit(:name, :lat, :lon))
+    @hotspot = Hotspot.new(params.require(:hotspot).permit(:name, :lat, :lon, :image_url))
   
     if @hotspot.save
       flash[:notice] = 'Successfully updated.'
@@ -26,7 +26,7 @@ class Admin::HotspotsController < Admin::AdminController
   def update
     @hotspot = Hotspot.find params[:id]
    
-    if @hotspot.update_attributes(params.require(:hotspot).permit(:name, :lat, :lon))
+    if @hotspot.update_attributes(params.require(:hotspot).permit(:name, :lat, :lon, :image_url))
     
       flash[:notice] = 'Successfully updated.'
       redirect_to request.referer

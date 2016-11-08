@@ -27,6 +27,11 @@ Rails.application.configure do
   config.consider_all_requests_local = true
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.default_url_options = { host: 'iwba.herokuapp.com' }
+  Rails.application.routes.default_url_options[:host] = 'iwba.herokuapp.com'
+  Rails.application.routes.default_url_options[:protocol] = 'http'
+  config.action_mailer.asset_host = "http://iwba.herokuapp.com"
+
+
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :user_name => ENV['SENDGRID_USERNAME'],

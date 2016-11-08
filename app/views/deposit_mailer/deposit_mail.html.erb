@@ -13,7 +13,7 @@
   font-family: 'Miriam Libre', Arial, sans-serif;
 ">
   <div>
-    <%= image_tag("https://iwba.herokuapp.com/assets/IWBA_logo.png") %>
+    <%= image_tag("IWBA_logo.png") %>
   </div>
 
   <h2>Congratulations!<br/>
@@ -43,5 +43,11 @@
     <p class="drops">
       <%= number_with_delimiter(df.amount) %> drops invested
     </p>
+    <% if df.hotspot.image_url.present? %>
+      <p>
+        <%= image_tag(df.hotspot.image_url) %>
+      </p>
+    <% end %>
+
   <% end %>
 </div>
