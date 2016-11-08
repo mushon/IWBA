@@ -4,7 +4,7 @@
   </li>
   <% if @deposit.present? and not @deposit.new_record? %>
   <li class="active">
-    <%= link_to "#{@deposit.name}", edit_admin_deposit_path(@deposit) %>
+    <%= link_to "#{@deposit.email}", edit_admin_deposit_path(@deposit) %>
   </li>
   <% elsif @deposit.present? and @deposit.new_record? %>
   <li class="active">
