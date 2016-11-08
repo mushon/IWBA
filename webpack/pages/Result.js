@@ -25,12 +25,17 @@ class Result extends Component {
       <section className="result" onClick={this.handleReset}>
 
         <header>
-          Thanks, we'll be in touch*…<br/>
-          <span>*check your spam folder</span>
+          <br/>
+          Thanks, we'll be in touch…
         </header>
         <div className="container">
-        Take care and remember,<br/>
-        every drop is counted!
+        <span>(check your spam folder)</span>
+        <br/>
+        <br/>
+        <br/>
+        and remember,<br/>
+        tomorrow's drought is today's opportunity!
+
           <div id="logo">
             IWBA
           </div>

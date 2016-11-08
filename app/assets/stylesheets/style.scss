@@ -328,11 +328,14 @@ br.clearing {
 .result {
   header {
     span{
-      color: #C6DDF7;
+      color: #9DABBC;
     }
   }
   .container {
     padding: 10px 32px;
+    span{
+      color: #9DABBC;
+    }
 
     #logo {
       bottom: 25px;

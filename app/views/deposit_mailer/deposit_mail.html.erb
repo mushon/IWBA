@@ -13,18 +13,18 @@
   font-family: 'Miriam Libre', Arial, sans-serif;
 ">
   <div>
-    <%= image_tag("IWBA_logo.png") %>
+    <%= image_tag("IWBA_logo.png", :alt => "IWBA") %>
   </div>
 
-  <h2>Congratulations!<br/>
-  Your water portfolio is set.</h2>
+  <h2>Congratulations!</h2>
+  <h2>Your water portfolio is set.</h2>
 
   <p class="desc">
     You have <%= @deposit.deposit_hotspots.sum(:amount) %> drops invested in <%= @deposit.deposit_hotspots.count %> water market<%= 's' if @deposit.deposit_hotspots.count > 1 %>.
   </p>
   <p class="desc">
-    In the next 24 years the value of your drops are<br/>
-    expected to raise between 35%-135%.
+    In the next 24 years the value of your drops is<br/>
+    expected to raise in up to 800%.
   </p>
 
   <% @deposit.deposit_hotspots.each_with_index do |df, i| %>
@@ -32,12 +32,12 @@
       <%= (i + 1) %>. <%= df.hotspot.name %>
     </h3>
     <div class="map-image-static">
-      <img src="https://api.mapbox.com/styles/v1/mushon/cittuq85x000s2irqfdmd1kdr/static/<%= df.hotspot.lon %>,<%= df.hotspot.lat %>,5.46,0.00,0.00/600x400?access_token=pk.eyJ1IjoibXVzaG9uIiwiYSI6IjY1bHhhTkEifQ.DhW2zcurHHBtmnc2FsMBqg" />
+      <img src="https://api.mapbox.com/styles/v1/mushon/cittuq85x000s2irqfdmd1kdr/static/<%= df.hotspot.lon %>,<%= df.hotspot.lat %>,5.46,0.00,0.00/600x400?access_token=pk.eyJ1IjoibXVzaG9uIiwiYSI6IjY1bHhhTkEifQ.DhW2zcurHHBtmnc2FsMBqg" alt="map"/>
     </div>
 
     <p>
       <% (0..df.amount).each do |i| %>
-        <span>💧</span>
+        <span><%= image_tag("mail_drop.png", :alt => "💧") %></span>
       <% end %>
     </p>
     <p class="drops">
@@ -50,4 +50,11 @@
     <% end %>
 
   <% end %>
+
+  <div id="footer" style="color: #9DABBC; font-size: 14px">
+    <hr/>
+    <p  style="color: #9DABBC; font-size: 14px">Our financial predictions and maps are based on the <a style="color:#0073f7" href="http://www.wri.org/resources/data-sets/aqueduct-water-stress-projections-data">Aqueduct Water Stress Projections Data</a> model developed by the World Resource Institute and licensed under <a style="color:#0073f7" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution International 4.0 License</a>.</p>
+    <p  style="color: #9DABBC; font-size: 14px">Concept and production by <a style="color:#0073f7" href="http://mushon.com">Mushon Zer-Aviv</a> &amp; <a style="color:#0073f7" href="http://wonyoung.so">Wonyoung So</a></p>
+  </div>
+
 </div>
