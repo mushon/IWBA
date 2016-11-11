@@ -15,7 +15,7 @@ class SendingEmail extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
 
     this.state = {
-      submitted: false
+      disabled: false
     }
   }
 
@@ -31,6 +31,11 @@ class SendingEmail extends Component {
   handleSubmit(e){
     e.preventDefault();
     if (!this.state.disabled) {
+
+      this.setState({
+        disabled: true
+      })
+
       let instance = axios.create({
         headers: {
           'X-CSRF-Token': this.props.authToken
@@ -43,18 +48,27 @@ class SendingEmail extends Component {
       })
       .then(function (response) {
         if (response.data.success) {
+
+          this.setState({
+            disabled: false
+          })
+
           hashHistory.push("/6-result");
+
+          
+
         } else {
           console.log(response);
         }
       })
       .catch(function (error) {
         console.log(error);
+      
+        this.setState({
+          disabled: false
+        })
       });
 
-      this.setState({
-        submitted: true
-      })
     }
 
   }
