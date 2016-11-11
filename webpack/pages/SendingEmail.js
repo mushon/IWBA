@@ -14,9 +14,7 @@ class SendingEmail extends Component {
     this.handleEmailChange = this.handleEmailChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
 
-    this.state = {
-      disabled: false
-    }
+
   }
 
   componentDidMount(){
@@ -30,46 +28,37 @@ class SendingEmail extends Component {
 
   handleSubmit(e){
     e.preventDefault();
-    if (!this.state.disabled) {
+    
+    let instance = axios.create({
+      headers: {
+        'X-CSRF-Token': this.props.authToken
+      }
+    })
 
-      this.setState({
-        disabled: true
-      })
+    instance.post('/api/deposits/batch_create.json', {
+      email: this.props.investorEmail,
+      deposits: this.props.deposits
+    })
+    .then(function (response) {
+      if (response.data.success) {
 
-      let instance = axios.create({
-        headers: {
-          'X-CSRF-Token': this.props.authToken
-        }
-      })
 
-      instance.post('/api/deposits/batch_create.json', {
-        email: this.props.investorEmail,
-        deposits: this.props.deposits
-      })
-      .then(function (response) {
-        if (response.data.success) {
 
-          this.setState({
-            disabled: false
-          })
+        hashHistory.push("/6-result");
 
-          hashHistory.push("/6-result");
+        
 
-          
+      } else {
+        console.log(response);
+      }
+    })
+    .catch(function (error) {
+      console.log(error);
+    
 
-        } else {
-          console.log(response);
-        }
-      })
-      .catch(function (error) {
-        console.log(error);
-      
-        this.setState({
-          disabled: false
-        })
-      });
+    });
 
-    }
+  
 
   }
 
