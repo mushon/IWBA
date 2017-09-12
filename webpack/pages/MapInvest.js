@@ -19,7 +19,7 @@ class MapInvest extends Component {
     // if (this.props.hotspots.features.length > 0 && _.isUndefined(this.map)){
        this.map = new mapboxgl.Map({
         container: this.refMapContainer,
-        style: 'mapbox://styles/mushon/cittuq85x000s2irqfdmd1kdr',
+        style: 'mapbox://styles/mushon/civ8ztx6m000t2inpqdcyp9x5', //'mapbox://styles/mushon/cittuq85x000s2irqfdmd1kdr',
         doubleClickZoom: false,
         zoom: 1.7,
         center: [63, 31]
